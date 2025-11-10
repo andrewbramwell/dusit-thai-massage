@@ -1,0 +1,28 @@
+{
+    "description": "Contact Anavaree Thai Massage in Wilmersdorf, Berlin. Book authentic Thai treatments with certified therapist Khun Pui. Enquiries welcome.",
+    "landing": "Contact",
+    "topper": "Contact",
+    "title": "Get in Touch",
+    "text": "Have questions about our traditional Thai massage treatments? We're here to help with any enquiries about our services or location.",
+    "info": {
+        "phone": {
+            "label": "Phone"
+        },
+        "hours": {
+            "label": "Opening Hours",
+            "value": "Mon - Sun: 10am - 8pm"
+        },
+        "address": {
+            "label": "Address"
+        }
+    },
+    "form": {
+        "title": "Send Enquiry",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Message",
+        "messagePlaceholder": "Write your enquiry...",
+        "submit": "Send Message"
+    }
+}

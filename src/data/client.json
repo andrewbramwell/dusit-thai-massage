@@ -1,0 +1,17 @@
+{
+	"name": "Anavaree Thai Massage",
+	"email": "anavareemassage@gmail.com",
+	"phoneForTel": "+493071056894",
+	"phoneFormatted": "+49 (0)30 7105 6894",
+	"openingHours": "",
+	"bookingLink": "https://anavareethaimassage.setmore.com/",
+	"address": {
+		"lineOne": "Brandenburgische Str. 74",
+		"lineTwo": "Wilmersdorf",
+		"city": "Berlin",
+		"state": "",
+		"zip": "10713",
+		"mapLink": "https://maps.app.goo.gl/QFfiUMEEPJZKKp3X6"
+	},
+	"domain": "anavareethaimassage.de"
+}

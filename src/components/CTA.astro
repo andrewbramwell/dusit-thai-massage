@@ -1,0 +1,119 @@
+---
+import { t, getLocalePath } from "i18n:astro";
+import { getOptimizedImage } from "@utils/utils";
+import client from "@data/client.json";
+// Import and optimize images
+import mobileImage from "@assets/images/CTA/cta.jpg"
+import desktopImage from "@assets/images/CTA/cta.jpg"
+
+const optimizedMobileImage = await getOptimizedImage(mobileImage);
+const optimizedDesktopImage = await getOptimizedImage(desktopImage);
+---
+
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+<section id="cta-51">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("common:cta.topper")}</span>
+            <h2 class="cs-title">{t("common:cta.title")}</h2>
+            <p class="cs-text">
+                {t("common:cta.text")}
+            </p>
+            <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-button-solid">{t("common:cta.cta")}</a>
+        </div>
+    </div>
+    <!-- Background Image-->
+    <picture class="cs-picture">
+        <source media="(max-width: 600px)" srcset={optimizedMobileImage.src}>
+        <source media="(min-width: 601px)" srcset={optimizedDesktopImage.src}>
+        <img loading="lazy" decoding="async" src={optimizedDesktopImage.src} alt="cabinets" width={optimizedDesktopImage.attributes.width} height={optimizedDesktopImage.attributes.height} aria-hidden="true">
+    </picture>
+</section>
+
+<!-- Don't forget to place the picture styles over into the CSPicture component -->
+<style lang="less">
+
+  /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #cta-51 {
+        padding: var(--sectionPadding);
+        position: relative;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            color: var(--bodyTextColorWhite);
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-picture {
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &:before {
+                /* black color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: #291a13;
+                opacity: 0.8;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+                                
+</style>

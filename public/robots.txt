@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anavareethaimassage.de/sitemap-index.xml

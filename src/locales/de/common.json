@@ -1,0 +1,69 @@
+{
+    "home": "Startseite",
+    "about": "Über uns",
+    "massages": "Massagen",
+    "contact": "Kontakt",
+    "theme-label": "Design wählen",
+    "language-label": "Sprache wählen",
+    "languageSelect": {
+        "de": "Deutsch",
+        "en": "English"
+    },
+      "themeSelect": {
+        "accessibleLabel": "Design Auswählen",
+        "light": "Hell",
+        "dark": "Dunkel",
+        "auto": "Automatisch"
+    },
+    "cta": {
+        "topper": "Jetzt Buchen",
+        "title": "Erleben Sie Authentische Thai-Heilkunst",
+        "text": "Bereit, Verspannungen zu lösen und Ihr Gleichgewicht wiederherzustellen? Unsere traditionellen Thai-Massage-Behandlungen sind darauf ausgelegt, Ihre individuellen Wellness-Bedürfnisse mit echter therapeutischer Fürsorge zu erfüllen.",
+        "cta": "Termin Vereinbaren"
+    },
+    "about-page": {
+        "landing": "Über uns",
+        "description": "Lernen Sie Khun Pui kennen, zertifizierte Thai-Massage-Therapeutin der Bangkoker Wat Po Schule. Familienpraxis in Wilmersdorf mit 20+ Jahren Erfahrung.",
+        "topper": "Unsere Geschichte",
+        "title": "Authentische Thai-Heilkunst im Herzen Berlins",
+        "p-1": "Khun Puis Weg begann in Nordostthailand, wo sie ihre Leidenschaft für traditionelle Heilkünste entdeckte. Nach ihrem Umzug nach Berlin im Jahr 2000 kehrte sie nach Thailand zurück, um sich an der renommierten Wat Po Traditional Medical School in Bangkok ausbilden zu lassen - dem Geburtsort der traditionellen Thai-Massage. Diese intensive Ausbildung vermittelte ihr authentische Techniken, die über Generationen von thailändischen Heilern weitergegeben wurden.",
+        "p-2": "Im September 2025 entstand Anavaree Thai Massage als echtes Familienunternehmen, liebevoll benannt nach Puis Tochter, die sie dazu inspirierte, zur Massagetherapie zurückzukehren. Mit über 20 Jahren Erfahrung arbeitet Pui Seite an Seite mit ihrer Tochter als Mittherapeutin, während ihr unterstützender Ehemann dafür sorgt, dass alle Geschäftsabläufe reibungslos funktionieren. Dieser familiäre Ansatz bedeutet, dass jeder Kunde echte, persönliche Betreuung erhält.",
+        "p-3": "Was uns auszeichnet, ist unser Engagement für umfassende therapeutische Betreuung. Jede Behandlung beginnt mit einer gründlichen Beratung, beinhaltet frische Bettwäsche und kostenlosen Thai-Tee und endet mit individueller Nachsorgeberatung.",
+        "p-4": "Wir sind spezialisiert auf Nacken-, Schulter- und Rückenbeschwerden, wobei viele Kunden bereits nach einer einzigen Sitzung deutliche Verbesserungen spüren.",
+        "rank": "Inhaberin",
+        "cta": "Termin Buchen",
+        "ourStory": {
+            "items": [
+                {
+                    "heading": "Unser Weg",
+                    "p": "Gegründet im September 2025, verkörpert unsere Praxis den Höhepunkt von Khun Puis über 20-jähriger Reise von Nordostthailand zur vertrauenswürdigen Thai-Massage-Spezialistin Berlins."
+                },
+                {
+                    "heading": "Unser Team", 
+                    "p": "Wir arbeiten als eng verbundenes Familienteam mit zwei Haupttherapeutinnen - Khun Pui und ihrer Tochter - unterstützt von ihrem Ehemann, der die Geschäftsführung übernimmt."
+                },
+                {
+                    "heading": "Unsere Räumlichkeiten",
+                    "p": "Unsere ruhige Praxis verfügt über vier professionelle Massageliegen in einer entspannenden Aromatherapie-Atmosphäre, ergänzt durch private Sanitäranlagen und bequeme Parkmöglichkeiten vor Ort."
+                }
+            ]
+        }
+    },
+    "footer": {
+        "information": "Informationen",
+        "services": "Behandlungen",
+        "contact": "Kontakt",
+        "click": "Klicken zum E-Mail senden",
+        "p": "Zusätzlicher Inhalt falls benötigt, ansonsten können Sie diesen ganzen p-Tag löschen. Mache ich normalerweise auch.",
+        "credit": "Entworfen und Hand-Codiert von "
+    },
+    "notFound": {
+        "pageNotFound": "404 - Die gesuchte Seite existiert nicht.",
+        "linkText": "Zurück zur Startseite"
+    },
+    "skipLink": "Klicken um zum Hauptinhalt zu springen",
+    "pagination": {
+        "previous": "Zurück",
+        "next": "Weiter"
+    }
+}

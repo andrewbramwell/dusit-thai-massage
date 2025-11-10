@@ -1,0 +1,473 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import client from "@data/client.json";
+import Landing from "@components/Landing.astro";
+import CTA from "@components/CTA.astro";
+import { t, getLocalePath } from "i18n:astro";
+import { getOptimizedImage } from "@utils/utils";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+import landingImage from "@assets/images/landing.jpg";
+const optimizedImage = await getOptimizedImage(landingImage);
+
+// Import and optimize massage service images
+import massageImage1 from "@assets/images/massage1.jpg";
+import massageImage2 from "@assets/images/massage2.jpg";
+import massageImage3 from "@assets/images/massage3.jpg";
+import massageImage4 from "@assets/images/massage4.jpg";
+import massageImage5 from "@assets/images/massage5.jpg";
+import massageImage6 from "@assets/images/massage6.jpg"; 
+import massageImage7 from "@assets/images/massage7.jpg"; 
+
+const optimizedMassageImage1 = await getOptimizedImage(massageImage1);
+const optimizedMassageImage2 = await getOptimizedImage(massageImage2);
+const optimizedMassageImage3 = await getOptimizedImage(massageImage3);
+const optimizedMassageImage4 = await getOptimizedImage(massageImage4);
+const optimizedMassageImage5 = await getOptimizedImage(massageImage5);
+const optimizedMassageImage6 = await getOptimizedImage(massageImage6);
+const optimizedMassageImage7 = await getOptimizedImage(massageImage7);
+---
+
+<BaseLayout
+  title={t("massages:landing")}
+  description={t("massages:description")}
+  preloadedImage={optimizedImage}
+>
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<Landing title={t("massages:landing")} image={optimizedImage}/>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+<section id="services-877">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("massages:services.topper")}</span>
+            <h2 class="cs-title">{t("massages:services.title")}</h2>
+            <p class="cs-text">
+                {t("massages:services.text")}
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage1.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage1.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage1.src} alt="massage therapy" width={optimizedMassageImage1.attributes.width} height={optimizedMassageImage1.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.0.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>30 Min. €45</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€80</s> €75</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€120</s> €110</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€160</s> €140</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.0.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage2.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage2.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage2.src} alt="massage therapy" width={optimizedMassageImage2.attributes.width} height={optimizedMassageImage2.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.1.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€80</s> €75</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€120</s> €110</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€160</s> €140</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.1.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage3.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage3.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage3.src} alt="massage therapy" width={optimizedMassageImage3.attributes.width} height={optimizedMassageImage3.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.2.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€80</s> €75</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€120</s> €110</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€160</s> €140</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.2.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage4.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage4.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage4.src} alt="massage therapy" width={optimizedMassageImage4.attributes.width} height={optimizedMassageImage4.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.3.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€100</s> €90</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€130</s> €120</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€200</s> €150</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.3.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage5.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage5.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage5.src} alt="massage therapy" width={optimizedMassageImage5.attributes.width} height={optimizedMassageImage5.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.4.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€140</s> €89</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€170</s> €155</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€280</s> €250</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.4.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage6.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage6.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage6.src} alt="massage therapy" width={optimizedMassageImage6.attributes.width} height={optimizedMassageImage6.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.5.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€140</s> €99</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€170</s> €155</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€280</s> €250</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.5.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                    <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage7.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage7.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage7.src} alt="massage therapy" width={optimizedMassageImage7.attributes.width} height={optimizedMassageImage7.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("massages:services.items.6.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€100</s> €90</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€130</s> €120</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€200</s> €150</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("massages:services.items.6.p")}
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-button-solid">{t("massages:services.cta")}</a>
+    </div>
+</section>
+
+<CTA />
+</BaseLayout>
+
+<style lang="less">
+  /* PAGE-SPECIFIC STYLES FOR THE CONTACT PAGE */
+
+  /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-877 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at Tablet */
+            max-width: (784/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            /* max width of 22 characters, includes spaces between words */
+            max-width: 39ch;
+        }
+
+        .cs-text {
+            max-width: (1064/16rem);
+        }
+
+        .cs-button-solid {
+            font-size: (16/16rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: (150/16rem);
+            padding: 0 (24/16rem);
+            background-color: var(--primary);
+            border-radius: (4/16rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: (4/16rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-card-group {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: (20/16rem);
+        }
+
+        .cs-item {
+            text-align: center;
+            list-style: none;
+            width: 100%;
+            max-width: (500/16rem);
+            border-radius: (16/16rem);
+            background-color: #fff;
+            overflow: hidden;
+            grid-column: span 3;
+            position: relative;
+            z-index: 1;
+            transition:
+                box-shadow 0.3s,
+                transform 0.3s;
+
+            &:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                transform: translateY(-0.4375rem);
+                .cs-picture {
+                    img {
+                        opacity: 0.3;
+                        transform: scale(1.1);
+                    }
+                }
+                .cs-h3 {
+                    color: var(--primaryLight);
+                }
+            }
+
+            &:before {
+                /* border, done in pseudo so it can sit under the picture */
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-radius: (16/16rem);
+                border: 1px solid #e8e8e8;
+                /* prevents border from affecting height and width */
+                box-sizing: border-box;
+                background: transparent;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+
+        .cs-link {
+            text-decoration: none;
+            padding: 0 0 (20/16rem) 0;
+            display: block;
+        }
+
+        .cs-picture {
+            width: 100%;
+            height: (200/16rem);
+            margin-bottom: (20/16rem);
+            background-color: var(--primaryLight);
+            /* clips the img tag corners */
+            overflow: hidden;
+            display: block;
+            position: relative;
+            z-index: 10;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition:
+                    transform 0.6s,
+                    opacity 0.3s;
+            }
+        }
+
+        .cs-h3 {
+            font-size: (20/16rem);
+            text-align: inherit;
+            line-height: 1.2em;
+            font-weight: 700;
+            color: var(--headerColor);
+            margin: 0 0 (12/16rem) 0;
+            /* 16px - 24px */
+            padding: 0 clamp(1rem, 2vw, 1.5rem);
+            transition: color 0.3s;
+        }
+
+        .cs-item-text {
+            /* 14px - 16px  */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            text-align: inherit;
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            margin: 0;
+            padding: 0 (20/16rem);
+            
+            s {
+                color: #999;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-877 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+        .cs-item {
+            grid-column: span 1;
+            max-width: (462/16rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-877 {
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-item-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text,
+            .cs-item-text {
+                opacity: 0.8;
+            }
+
+            .cs-item {
+                background-color: var(--medium);
+                &:before {
+                    opacity: 0.3;
+                }
+            }
+        }
+    }
+}
+
+                                
+                                
+
+</style>

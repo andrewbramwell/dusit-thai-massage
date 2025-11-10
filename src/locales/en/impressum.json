@@ -1,0 +1,72 @@
+{
+    "title": "Imprint",
+    "description": "Legal information and contact details for Anavaree Thai Massage in Berlin",
+    "landing": "Imprint",
+    
+    "section1": {
+        "title": "Information pursuant to § 5 TMG",
+        "businessName": "Anavaree Thai Massage",
+        "owner": "Vanessa Ünal",
+        "address": "Brandenburgische Straße 74",
+        "city": "10713 Berlin",
+        "country": "Germany"
+    },
+    
+    "section2": {
+        "title": "Contact",
+        "phone": "Phone:",
+        "email": "Email:",
+        "website": "Website:"
+    },
+    
+    "section3": {
+        "title": "VAT ID",
+        "content": "VAT identification number according to § 27 a of the VAT Act:",
+        "vatId": "[DE123456789]",
+        "note": "(If applicable)"
+    },
+    
+    "section4": {
+        "title": "Professional Title and Regulations",
+        "profession": "Professional title:",
+        "professionTitle": "Massage Therapist",
+        "country": "Awarded in:",
+        "countryName": "Thailand",
+        "regulations": "The following professional regulations apply:",
+        "regulation1": "Certification by Wat Po Traditional Medical School, Bangkok",
+        "regulation2": "Professional liability insurance in place"
+    },
+    
+    "section5": {
+        "title": "Responsible for content according to § 55 para. 2 RStV",
+        "responsible": "Vanessa Ünal",
+        "address": "Brandenburgische Straße 74, 10713 Berlin, Germany "
+    },
+    
+    "section6": {
+        "title": "EU Dispute Resolution",
+        "content": "The European Commission provides a platform for online dispute resolution (ODR):",
+        "linkText": "https://ec.europa.eu/consumers/odr/",
+        "email": "Our email address can be found above in the imprint."
+    },
+    
+    "section7": {
+        "title": "Consumer Dispute Resolution",
+        "content": "We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board."
+    },
+    
+    "section8": {
+        "title": "Liability for Content",
+        "content": "As a service provider, we are responsible for our own content on these pages in accordance with § 7 para.1 TMG under general laws. However, according to §§ 8 to 10 TMG, we are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity. Obligations to remove or block the use of information under general laws remain unaffected. However, liability in this regard is only possible from the point in time at which knowledge of a specific infringement of the law is known. Upon becoming aware of corresponding legal violations, we will remove this content immediately."
+    },
+    
+    "section9": {
+        "title": "Liability for Links",
+        "content": "Our website contains links to external third-party websites over whose content we have no control. Therefore, we cannot assume any liability for this external content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal content was not recognizable at the time of linking. However, permanent monitoring of the content of the linked pages is not reasonable without concrete evidence of an infringement. Upon becoming aware of legal violations, we will remove such links immediately."
+    },
+    
+    "section10": {
+        "title": "Copyright",
+        "content": "The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator. Downloads and copies of this page are only permitted for private, non-commercial use. Insofar as the content on this site was not created by the operator, the copyrights of third parties are respected. In particular, third-party content is identified as such. Should you nevertheless become aware of a copyright infringement, we ask that you notify us accordingly. Upon becoming aware of legal violations, we will remove such content immediately."
+    }
+}

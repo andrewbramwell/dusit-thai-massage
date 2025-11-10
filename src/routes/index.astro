@@ -1,0 +1,1713 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import CTA from "@components/CTA.astro";
+import { getLocalePath, t } from "i18n:astro";
+import { getOptimizedImage } from "@utils/utils";
+import client from "@data/client.json";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Hero (for rendering)
+import landingImage from "@assets/images/hero.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+import mobileLandingImage from "@assets/images/hero-m.jpg"; // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
+const optimizedLandingImage = await getOptimizedImage(landingImage);
+const optimizedMobileLandingImage = await getOptimizedImage(mobileLandingImage);
+
+// Import and optimize massage service images
+import massageImage5 from "@assets/images/massage5.jpg";
+import massageImage6 from "@assets/images/massage6.jpg";
+import massageImage3 from "@assets/images/massage3.jpg";
+const optimizedMassageImage5 = await getOptimizedImage(massageImage5);
+const optimizedMassageImage6 = await getOptimizedImage(massageImage6);
+const optimizedMassageImage3 = await getOptimizedImage(massageImage3);
+
+// Import and optimize Why Us section images
+import whyImage1 from "@assets/images/why1.jpg";
+import whyImage2 from "@assets/images/why2.jpg";
+const optimizedWhyImage1 = await getOptimizedImage(whyImage1);
+const optimizedWhyImage2 = await getOptimizedImage(whyImage2);
+
+// Import Side by Side section image
+import aboutImage1 from "@assets/images/about1.jpg";
+
+// ... your existing optimizations
+
+// Optimize About section image
+const optimizedAboutImage1 = await getOptimizedImage(aboutImage1);
+
+
+
+
+// Import Gallery images
+import galImage1 from "@assets/images/gal1.jpg";
+import galImage2 from "@assets/images/gal2.jpg";
+import galImage3 from "@assets/images/gal3.jpg";
+import galImage4 from "@assets/images/gal4.jpg";
+import galImage5 from "@assets/images/gal5.jpg";
+import galImage6 from "@assets/images/gal6.jpg";
+
+
+
+// Optimize Gallery images
+const optimizedGalImage1 = await getOptimizedImage(galImage1);
+const optimizedGalImage2 = await getOptimizedImage(galImage2);
+const optimizedGalImage3 = await getOptimizedImage(galImage3);
+const optimizedGalImage4 = await getOptimizedImage(galImage4);
+const optimizedGalImage5 = await getOptimizedImage(galImage5);
+const optimizedGalImage6 = await getOptimizedImage(galImage6);
+
+// ... your existing imports
+
+// Import FAQ section image
+import faqImage from "@assets/images/faq.jpg";
+
+// ... your existing optimizations
+
+// Optimize FAQ image
+const optimizedFaqImage = await getOptimizedImage(faqImage);
+
+
+---
+
+<BaseLayout title={t("home:layout.title")} description={t("home:layout.description")} preloadedImage={optimizedMobileLandingImage}>
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+<section id="hero-2151">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("home:hero.topper")}</span>
+            <h1 class="cs-title">
+                {t("home:hero.title.1")}
+            </h1>
+            <p class="cs-text">
+                {t("home:hero.p1")}
+            </p>
+            <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-button-solid">{t("home:hero.cta1")}</a>
+        </div>
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset={optimizedMobileLandingImage.src} />
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset={optimizedLandingImage.src} />
+            <img loading="lazy" decoding="async" src={optimizedLandingImage.src} alt="wedding couple" width={optimizedLandingImage.attributes.width} height={optimizedLandingImage.attributes.height}>
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+<section id="services-877">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("home:services.topper")}</span>
+            <h2 class="cs-title">{t("home:services.title")}</h2>
+            <p class="cs-text">
+                {t("home:services.text")}
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                   <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage5.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage5.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage5.src} alt="massage therapy" width={optimizedMassageImage5.attributes.width} height={optimizedMassageImage5.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("home:services.items.0.heading")}</h3>
+                     <p class="cs-item-text">
+                        <strong>60 Min. <s>€140</s> €89</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€170</s> €155</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€280</s> €250</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("home:services.items.0.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                     <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage6.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage6.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage6.src} alt="massage therapy" width={optimizedMassageImage6.attributes.width} height={optimizedMassageImage6.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("home:services.items.1.heading")}</h3>
+                     <p class="cs-item-text">
+                        <strong>60 Min. <s>€140</s> €99</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€170</s> €155</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€280</s> €250</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("home:services.items.1.p")}
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-link">
+                     <picture class="cs-picture" aria-hidden="true">
+                        <source media="(max-width: 600px)" srcset={optimizedMassageImage3.src}>
+                        <source media="(min-width: 601px)" srcset={optimizedMassageImage3.src}>
+                        <img loading="lazy" decoding="async" src={optimizedMassageImage3.src} alt="massage therapy" width={optimizedMassageImage3.attributes.width} height={optimizedMassageImage3.attributes.height}>
+                    </picture>
+                    <h3 class="cs-h3">{t("home:services.items.2.heading")}</h3>
+                    <p class="cs-item-text">
+                        <strong>60 Min. <s>€80</s> €75</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>90 Min. <s>€120</s> €110</strong>
+                    </p>
+                    <p class="cs-item-text">
+                        <strong>120 Min. <s>€160</s> €140</strong>
+                    </p>
+                    <br>
+                    <p class="cs-item-text">
+                        {t("home:services.items.2.p")}
+                    </p>
+                </a>
+            </li>
+        </ul>
+        <a href={getLocalePath("/massages")} class="cs-button-solid">{t("home:services.cta")}</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Why Choose Us                 -->
+<!-- ============================================ -->
+
+<section id="why-choose-1635">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">{t("home:whyChoose.topper")}</span>
+                <h2 class="cs-title">{t("home:whyChoose.title")}</h2>
+            </div>
+            <p class="cs-text">
+                {t("home:whyChoose.text")}
+            </p>
+        </div>  
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-icon-wrapper">
+                        <svg class="cs-icon" aria-hidden="true" viewBox="0 0 512 512" width="32" height="32">
+                            <g>
+                                <path d="M298.384 72.494c3.089-6.65 4.701-13.902 4.701-21.431C303.085 22.906 280.178 0 252.022 0c-28.157 0-51.063 22.906-51.063 51.063 0 7.528 1.612 14.779 4.703 21.429-25.859 17.313-43.169 48.646-43.169 84.348 0 3.515.171 6.986.498 10.407 46.277-5.546 85.238-21.793 115.899-48.366 17.329-15.018 27.26-29.531 31.567-36.692a90.937 90.937 0 0 0-12.073-9.695zM329.564 107.587c-6.47 9.083-16.148 20.783-29.717 32.747-24.21 21.348-65.939 47.73-129.776 56.199 13.892 34.672 45.395 58.935 81.95 58.935 49.366 0 89.529-44.244 89.529-98.628-.001-17.927-4.368-34.751-11.986-49.253zM227.848 512h78.375v-79.176c-21.177 31.895-47.565 58.594-78.375 79.176zM326.749 265.578h-9.87c-6.318 22.183-30.843 88.295-109.798 147.142v77.109c47.707-30.322 83.007-75.488 105.027-134.496 18.19-48.744 19.98-89.109 19.996-89.51l1.048.039a78.376 78.376 0 0 0-6.403-.284zM361.556 273.846c-1.261 14.397-5.73 49.612-21.021 90.959a355.05 355.05 0 0 1-4.365 11.178V512h67.62V341.901c-.002-29.68-17.202-55.437-42.234-68.055z"/>
+                                <path d="M185.249 265.578c-42.48 0-77.039 34.238-77.039 76.323V512h68.926V348.299h29.945v26.114c50.285-43.119 70.809-87.38 78.365-108.835H185.249z"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">{t("home:whyChoose.items.0.heading")}</h3>
+                        <p class="cs-item-text">
+                            {t("home:whyChoose.items.0.p")}
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-icon-wrapper">
+                        <svg class="cs-icon" aria-hidden="true" viewBox="0 0 32 32" width="32" height="32">
+                            <g>
+                                <path d="m16.927 5.189 12.157 7.064a.712.712 0 0 1 0 1.232l-12.157 7.064a2.402 2.402 0 0 1-2.415 0L2.355 13.485a.712.712 0 0 1 0-1.232l12.157-7.064a2.407 2.407 0 0 1 2.415 0z"/>
+                                <path d="m16.927 5.189 12.157 7.064a.712.712 0 0 1 0 1.232l-12.157 7.064a2.402 2.402 0 0 1-2.415 0L2.355 13.485a.712.712 0 0 1 0-1.232l12.157-7.064a2.407 2.407 0 0 1 2.415 0z"/>
+                                <path d="m29.08 13.49-4.13 2.4-8.02 4.66c-.75.43-1.67.43-2.42 0l-8.02-4.66-4.14-2.4a.721.721 0 0 1 0-1.24l12.16-7.06c.75-.43 1.67-.43 2.42 0l12.15 7.06c.48.28.48.96 0 1.24z"/>
+                                <path d="M17.684 21.847c-.603.345-1.279.526-1.964.526s-1.361-.181-1.956-.521L6.49 17.625v3.755c0 .84.44 1.61 1.17 2.03l5.07 2.93a6.001 6.001 0 0 0 5.97 0l5.08-2.93c.72-.42 1.17-1.19 1.17-2.03v-3.755zM29.3 22.707v-7.61l-1.801 1.046v6.563a1.601 1.601 0 1 0 1.801.001z"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">{t("home:whyChoose.items.1.heading")}</h3>
+                        <p class="cs-item-text">
+                            {t("home:whyChoose.items.1.p")}
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-icon-wrapper">
+                        <svg class="cs-icon" aria-hidden="true" viewBox="0 0 66 66" width="32" height="32">
+                            <g>
+                                <path d="M14.266 24.585h.921v9.619h8.892v-9.619h17.832v9.619h8.892v-9.619h.921c2.793 0 5.062-2.279 5.062-5.071a.967.967 0 0 0-.97-.97.973.973 0 0 0-.97.97 3.128 3.128 0 0 1-3.122 3.132H14.266a3.135 3.135 0 0 1-3.122-3.132c0-.533-.436-.97-.97-.97s-.97.436-.97.97c.001 2.792 2.27 5.071 5.062 5.071z"/>
+                                <path d="M20.045 15.896h2.094v4.809h7.127v-4.809h7.457v4.809h7.127v-4.809h2.113c.533 0 .97-.436.97-.97a.955.955 0 0 0-.407-.795L33.679 1.284a.966.966 0 0 0-1.367 0L19.367 14.238a.952.952 0 0 0-.213 1.057.97.97 0 0 0 .891.601zM32.998 51.553a4.919 4.919 0 0 0-4.913 4.913V65h9.826v-8.534a4.919 4.919 0 0 0-4.913-4.913z"/>
+                                <path d="M19.82 65h6.326v-8.534c0-3.778 3.074-6.852 6.852-6.852s6.852 3.074 6.852 6.852V65h6.325V36.143H19.82zM4.104 33.021c0-.533-.436-.97-.97-.97s-.97.436-.97.97a5.072 5.072 0 0 0 5.062 5.062h3.19v24.978H1.971a.973.973 0 0 0-.97.97c0 .533.436.97.97.97H17.88V36.143H7.226a3.126 3.126 0 0 1-3.122-3.122zM64.029 63.061h-8.446V38.082h3.18a5.065 5.065 0 0 0 5.062-5.062.973.973 0 0 0-.97-.97.973.973 0 0 0-.97.97 3.12 3.12 0 0 1-3.122 3.122H48.115V65H64.03c.533 0 .97-.436.97-.97a.974.974 0 0 0-.971-.969z"/>
+                            </g>
+                        </svg>
+                    </span>
+                    <div class="cs-text-group">
+                        <h3 class="cs-h3">{t("home:whyChoose.items.2.heading")}</h3>
+                        <p class="cs-item-text">
+                            {t("home:whyChoose.items.2.p")}
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="cs-image-group">
+                <div class="cs-picture-wrapper">
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset={optimizedWhyImage1.src}>
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset={optimizedWhyImage1.src}>
+                        <img loading="lazy" decoding="async" src={optimizedWhyImage1.src} alt="meeting" width={optimizedWhyImage1.attributes.width} height={optimizedWhyImage1.attributes.height}>
+                    </picture>
+                </div>
+                <picture class="cs-picture cs-picture2">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset={optimizedWhyImage2.src}>
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset={optimizedWhyImage2.src}>
+                    <img loading="lazy" decoding="async" src={optimizedWhyImage2.src} alt="on computer" width={optimizedWhyImage2.attributes.width} height={optimizedWhyImage2.attributes.height}>
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Side By Side Reverse             -->
+<!-- ============================================ -->
+<section id="sbsr-1007">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Desktop-->
+                <source media="(min-width: 1024px)" srcset={optimizedAboutImage1.src}>
+                <!--Tablet-->
+                <source media="(min-width: 601px)" srcset={optimizedAboutImage1.src}>
+                <!--Mobile-->
+                <source media="(max-width: 600px)" srcset={optimizedAboutImage1.src}>
+                <img loading="lazy" decoding="async" src={optimizedAboutImage1.src} alt="about us" width={optimizedAboutImage1.attributes.width} height={optimizedAboutImage1.attributes.height} aria-hidden="true">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">{t("home:sideBySide.topper")}</span>
+            <h2 class="cs-title">{t("home:sideBySide.title")}</h2>
+            <p class="cs-text">
+                {t("home:sideBySide.text1")}
+                <!--Creates the space between p tags on mobile-->
+                <span class="cs-spacer"></span>
+                {t("home:sideBySide.text2")}
+            </p>
+            <a href={getLocalePath("/about")} class="cs-button-solid">{t("home:sideBySide.cta")}</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+<section id="gallery-402">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("home:gallery.topper")}</span>
+            <h2 class="cs-title">{t("home:gallery.title")}</h2>
+        </div>
+        <div class="cs-gallery">
+            <!--Picture 1-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset={optimizedGalImage1.src}>
+                <source media="(min-width: 601px)" srcset={optimizedGalImage1.src}>
+                <img loading="lazy" decoding="async" src={optimizedGalImage1.src} alt="gallery" width={optimizedGalImage1.attributes.width} height={optimizedGalImage1.attributes.height}>
+            </picture>
+            <!--Picture 2-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset={optimizedGalImage2.src}>
+                <source media="(min-width: 601px)" srcset={optimizedGalImage2.src}>
+                <img loading="lazy" decoding="async" src={optimizedGalImage2.src} alt="gallery" width={optimizedGalImage2.attributes.width} height={optimizedGalImage2.attributes.height}>
+            </picture>
+            <!--Picture 3-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset={optimizedGalImage3.src}>
+                <source media="(min-width: 601px)" srcset={optimizedGalImage3.src}>
+                <img loading="lazy" decoding="async" src={optimizedGalImage3.src} alt="gallery" width={optimizedGalImage3.attributes.width} height={optimizedGalImage3.attributes.height}>
+            </picture>
+            <!--Picture 4-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset={optimizedGalImage4.src}>
+                <source media="(min-width: 601px)" srcset={optimizedGalImage4.src}>
+                <img loading="lazy" decoding="async" src={optimizedGalImage4.src} alt="gallery" width={optimizedGalImage4.attributes.width} height={optimizedGalImage4.attributes.height}>
+            </picture>
+            <!--Picture 5-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset={optimizedGalImage5.src}>
+                <source media="(min-width: 601px)" srcset={optimizedGalImage5.src}>
+                <img loading="lazy" decoding="async" src={optimizedGalImage5.src} alt="gallery" width={optimizedGalImage5.attributes.width} height={optimizedGalImage5.attributes.height}>
+            </picture>
+            <!--Picture 6-->
+            <picture class="cs-image">
+                <source media="(max-width: 600px)" srcset={optimizedGalImage6.src}>
+                <source media="(min-width: 601px)" srcset={optimizedGalImage6.src}>
+                <img loading="lazy" decoding="async" src={optimizedGalImage6.src} alt="gallery" width={optimizedGalImage6.attributes.width} height={optimizedGalImage6.attributes.height}>
+            </picture>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1108">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">{t("home:faq.topper")}</span>
+            <h2 class="cs-title">{t("home:faq.title")}</h2>
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset={optimizedFaqImage.src}>
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset={optimizedFaqImage.src}>
+                <img loading="lazy" decoding="async" src={optimizedFaqImage.src} alt="frequently asked questions" width={optimizedFaqImage.attributes.width} height={optimizedFaqImage.attributes.height}>
+            </picture>
+        </div>
+        <div class="cs-flex-group">
+            <ul class="cs-faq-group">
+                <!-- Active class added as default -->
+                <li class="cs-faq-item active">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            {t("home:faq.items.0.question")}
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        {t("home:faq.items.0.answer")}
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            {t("home:faq.items.1.question")}
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        {t("home:faq.items.1.answer")}
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            {t("home:faq.items.2.question")}
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        {t("home:faq.items.2.answer")}
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            {t("home:faq.items.3.question")}
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        {t("home:faq.items.3.answer")}
+                    </p>
+                </li>
+                <li class="cs-faq-item">
+                    <button class="cs-button">
+                        <span class="cs-button-text">
+                            {t("home:faq.items.4.question")}
+                        </span>
+                    </button>
+                    <p class="cs-item-p">
+                        {t("home:faq.items.4.answer")}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+for (const item of faqItems) {
+    const button = item.querySelector('.cs-button');
+    const onClick = () => {
+        item.classList.toggle('active');
+    }
+    button.addEventListener('click', onClick);
+}
+</script>
+
+
+
+
+	
+
+	<CTA />
+</BaseLayout>
+
+<style lang="less">
+	/* STYLES FOR ABOVE THE FOLD */
+
+	/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-2151 {
+        /* 160px - 200px - top leaving extra space for the navigation */
+        padding: clamp(10rem, 25.95vw, 12.5rem) 0 0 0;
+        background-color: #F8F5F1;
+        overflow: hidden;
+        position: relative;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1720/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 100px */
+            gap: clamp(3rem, 6vw, 6.25rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            /* 16px - 100px left & right */
+            padding: 0 clamp(1rem, 2vw, 6.25rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            max-width: 30ch;
+        }
+
+        .cs-text {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            max-width: 65ch;
+            margin: 0 0 (32/16rem) 0;
+        }
+
+        .cs-background {
+            width: 100%;
+            height: 100vw;
+            max-height: (476/16rem);
+            display: block;
+            position: relative;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .cs-graphic {
+            /* 200px - 280px */
+            width: clamp(12.5rem, 25vw, 17.5rem);
+            height: auto;
+            display: none;
+            position: absolute;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero-2151 {
+        .cs-graphic {
+            display: block;
+            bottom: calc(clamp(3rem, 6vw, 6.25rem)*-1);
+            left: 0;
+            z-index: 0;
+        }
+
+        .cs-content {
+            /* 60px - 100px */
+            padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero-2151 {
+        /* 120px - 250px top */
+        /* 60px - 200px  bottom */
+        padding: clamp(7.5rem, 23.82vw, 15.625rem) (16/16rem) clamp(3.75rem, 15.82vw, 12.5rem) (16/16rem);
+
+        .cs-container {
+            flex-direction: row;
+        }
+
+        .cs-content {
+            /* removed padding and put it on the section */
+            width: 55%;
+            /* 16px - 100px */
+            padding: 0 clamp(1rem, 2vw, 6.25rem);
+        }
+
+        .cs-background {
+            width: 42%;
+            height: auto;
+            max-height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .cs-graphic {
+            bottom: calc(clamp(3.75rem, 15.82vw, 12.5rem)*-1);
+        }
+    }
+}
+
+/* Large Desktop - 1440px */
+@media only screen and (min-width: 90rem) {
+    #hero-2151 {
+        .cs-background {
+            width: 50%;
+        }
+
+        .cs-content {
+            width: 50%;
+        }
+
+        .cs-graphic {
+            left: (-70/16rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero-2151 {
+            background-color: rgba(0, 0, 0, .2);
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-877 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at Tablet */
+            max-width: (784/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            /* max width of 22 characters, includes spaces between words */
+            max-width: 39ch;
+        }
+
+        .cs-text {
+            max-width: (1064/16rem);
+        }
+
+        .cs-card-group {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: (20/16rem);
+        }
+
+        .cs-item {
+            text-align: center;
+            list-style: none;
+            width: 100%;
+            max-width: (500/16rem);
+            border-radius: (16/16rem);
+            background-color: #fff;
+            overflow: hidden;
+            grid-column: span 3;
+            position: relative;
+            z-index: 1;
+            transition:
+                box-shadow 0.3s,
+                transform 0.3s;
+
+            &:hover {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                transform: translateY(-0.4375rem);
+                .cs-picture {
+                    img {
+                        opacity: 0.3;
+                        transform: scale(1.1);
+                    }
+                }
+                .cs-h3 {
+                    color: var(--primaryLight);
+                }
+            }
+
+            &:before {
+                /* border, done in pseudo so it can sit under the picture */
+                content: "";
+                width: 100%;
+                height: 100%;
+                border-radius: (16/16rem);
+                border: 1px solid #e8e8e8;
+                /* prevents border from affecting height and width */
+                box-sizing: border-box;
+                background: transparent;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
+
+        .cs-link {
+            text-decoration: none;
+            padding: 0 0 (20/16rem) 0;
+            display: block;
+        }
+
+        .cs-picture {
+            width: 100%;
+            height: (200/16rem);
+            margin-bottom: (20/16rem);
+            background-color: var(--primaryLight);
+            /* clips the img tag corners */
+            overflow: hidden;
+            display: block;
+            position: relative;
+            z-index: 10;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition:
+                    transform 0.6s,
+                    opacity 0.3s;
+            }
+        }
+
+        .cs-h3 {
+            font-size: (20/16rem);
+            text-align: inherit;
+            line-height: 1.2em;
+            font-weight: 700;
+            color: var(--headerColor);
+            margin: 0 0 (12/16rem) 0;
+            /* 16px - 24px */
+            padding: 0 clamp(1rem, 2vw, 1.5rem);
+            transition: color 0.3s;
+        }
+
+        .cs-item-text {
+            /* 14px - 16px  */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            text-align: inherit;
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            margin: 0;
+            padding: 0 (20/16rem);
+            
+            s {
+                color: #999;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #services-877 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+        .cs-item {
+            grid-column: span 1;
+            max-width: (462/16rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services-877 {
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text,
+            .cs-h3,
+            .cs-item-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text,
+            .cs-item-text {
+                opacity: 0.8;
+            }
+
+            .cs-item {
+                background-color: var(--medium);
+                &:before {
+                    opacity: 0.3;
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---      Why Choose Us         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #why-choose-1635 {
+        padding: var(--sectionPadding);
+        
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (584/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 100px */
+            gap: clamp(3rem, 10vw, 6.25rem);
+        }
+    
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-flex {
+            max-width: (616/16rem);
+        }
+    
+        .cs-title {
+            max-width: 20ch;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .cs-wrapper {
+            width: 100%;
+        }
+
+        .cs-card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            row-gap: (28/16rem);
+            /* 16px - 20px */
+            column-gap: clamp(1rem, 2.3vw, 1.25rem);
+        }
+
+        .cs-item {
+            text-align: left;
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            grid-column: span 12;
+            flex-direction: column;
+            align-items: flex-start;
+            /* 16px - 24px */
+            gap: clamp(1rem, 3vw, 1.5rem);
+        }
+
+        .cs-icon-wrapper {
+            /* 60px - 80px */
+            width: clamp(3.75rem, 7vw, 5rem);
+            height: clamp(3.75rem, 7vw, 5rem);
+            margin: 0;
+            box-sizing: border-box;
+            border: 1px solid var(--primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            border-radius: 50%;
+        }
+
+        .cs-icon {
+            width: (32/16rem);
+            height: auto;
+            display: block;
+            /* changes color of svg icon */
+            fill: var(--primary);
+        }
+
+        .cs-h3 {
+            font-size: (20/16rem);
+            line-height: 1.5em;
+            margin: 0;
+            margin-bottom: (8/16rem);
+            color: var(--headerColor);
+            text-align: inherit;
+        }
+
+        .cs-item-text {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--bodyTextColor);
+            text-align: inherit;
+        }
+
+        .cs-wrapper {
+            /* makes the contents of this container act as though the container doesn't exist. They are now children of the cs-container so they can be positioned around each other. This allows us to sue the order property to place the cs-image-group at the top of the page on mobile */
+            display: contents;
+        }
+
+        .cs-image-group {
+            font-size:~"min(2.7vw, 1em)";
+            width: (542/16em);
+            height: (494/16em);
+            /* sends it to teh top in the 1st position */
+            order: -1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cs-picture-wrapper {
+            width: 80.073801%;
+            height: 83.805668%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: stretch;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+        .cs-box {
+            width: 60%;
+            margin-top: (-38/16em);
+            margin-left: (24/16em);
+            padding: (16/16em);
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: (4/16rem);
+            position: relative;
+            z-index: 10;
+        }
+
+        .cs-header {
+            font-size: (16/16em);
+            line-height: 1.2em;
+            font-weight: 700;
+            margin: 0;
+            color: var(--headerColor);
+            display: block;
+        }
+
+        .cs-desc {
+            font-size: (14/16em);
+            line-height: 1.5em;
+            margin: 0;
+            color: var(--primary);
+            display: block;
+        }
+
+        .cs-picture {
+            position: relative;
+            z-index: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 0.75em;
+            }
+        }
+
+        .cs-picture1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cs-picture2 {
+            width: 36.346863%;
+            height: 39.878543%;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #why-choose-1635 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+
+        .cs-content {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cs-flex {
+            text-align: left;
+            width: 40vw;
+            max-width: (640/16rem);
+            flex: none;
+        }
+
+        .cs-title {
+            margin: 0;
+        }
+
+        .cs-h3,
+        .cs-item-text {
+            text-align: left;
+        }
+        
+        .cs-item {
+            grid-column: span 4;
+        }
+
+        .cs-image-group {
+            width: 100%;
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #why-choose-1635 {
+        /* set the darker background color on the main div */
+        background-color: #F8F5F1;
+        overflow: hidden;
+        
+        .cs-content {
+            align-items: flex-start;
+        }
+
+        .cs-flex {
+            width: 50%;
+        }
+
+        .cs-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: (40/16rem);
+            position: relative;
+            z-index: 1;
+
+            &:before {
+                /* make the white space dependant on the height of the cs-wrapper as a pseudo element attached to the cs wrapper. This makes the white background responsive to the amount of items you have in your list. When the list grows or shrinks, the design will maintain its same spacing */
+                content: '';
+                width: 100vw;
+                height: 100vw;
+                background: #fff;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0;
+                left: 50%;
+                z-index: -1;
+                transform: translateX(-50%);
+            }
+        }
+
+        .cs-card-group {
+            max-width: (630/16rem);
+            /* use padding to push add the same amount of space between the content and the top of the card group as the negative margin top value on the cs-image-group. This makes sure that it counter acts the effects of the negative margin affecting the card group as well */
+            padding-top: (48/16rem);
+            align-self: flex-start;
+        }
+
+        .cs-image-group {
+            width: (542/16em);
+            /* by setting height to auto, it will stretch to fill the container height. So when you add or subtract more cards and change the height of the container, the image group will shrink as well. Thats why we set the heights of the images in percentages. They will always be X% tall inside the cs-image-group. So when the image group stretches to match the container height, the pictures percentage height also grows proportionally. This ensures the design responds to changes in height from the card section on the left. */
+            height: auto;
+            min-height: (494/16em);
+            /* makes it overlap the .cs-wrapper div */
+            margin-top: (-48/16rem);
+            flex: none;
+        }
+
+        .cs-item {
+            grid-column: span 12;
+            flex-direction: row;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #why-choose-1635 {
+            background-color: #230E04;
+
+            .cs-title, .cs-text, .cs-h3, .cs-item-text, .cs-header {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text, .cs-item-text {
+                opacity: .8;
+            }
+
+            .cs-box {
+                background-color: var(--dark);
+                position: relative;
+                z-index: 1;
+
+                &:before {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: #000;
+                    opacity: .2;
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
+
+            .cs-wrapper {
+                &:before {
+                    background-color: var(--dark);
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbsr-1007 {
+        padding: var(--sectionPadding);
+        padding-top: 0;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (800/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            /* changes to 522px at desktop */
+            max-width: (578/16rem);
+            margin-top: (-16/16rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
+        }
+
+        .cs-title {
+            /* 32px - 48px */
+            margin: 0 0 1rem 0;;
+        }
+
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-spacer {
+            width: 100%;
+            /* 16px - 24px */
+            height: clamp(1rem, 3vw, 1.5rem);
+            display: block;
+        }
+
+        .cs-image-group {
+            width: 100%;
+        }
+
+        .cs-picture {
+            width: 100%;
+            height: (261/16rem);
+            background-color: #fff;
+            display: block;
+            position: relative;
+            
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* makes it behave like a background image */
+                object-fit: cover;
+                border-radius: 1.25em;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #sbsr-1007 {
+        .cs-container {
+            align-items: flex-start;
+        }
+        .cs-flex-group {
+            flex-direction: row;
+        }
+
+        .cs-text {
+            columns: 2;
+            column-gap: (24/16rem);
+        }
+
+        .cs-spacer {
+            display: none;
+        }
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #sbsr-1007 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            /* 100px - 200px */
+            gap: clamp(6.25rem, 13vw, 12.5rem);
+        }
+
+        .cs-image-group {
+            max-width: (542/16rem);
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            /* sends it to the right in the 2nd position */
+            order: 2;
+        }
+
+        .cs-picture {
+            height: (460/16rem);
+            aspect-ratio: initial;
+        }
+
+        .cs-seal {
+            /* 104 - 190px */
+            width: clamp(6.5rem, 13vw, 11.875rem);
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            /* subtract 12px (.75rem) to account for the border */
+            left: ~"calc((clamp(6.5rem, 13vw, 11.875rem)*-.5) + -.75rem)";
+            transform: translateY(-50%);
+        }
+
+        .cs-content {
+            flex: none;
+            width: 54%;
+            max-width: (542/16rem);
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbsr-1007 {
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-picture {
+                border-color: var(--dark);
+                background-color: var(--dark);
+            }
+
+            .cs-seal {
+                border-color: var(--dark);
+                background-color: var(--dark);
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #gallery-402 {
+        padding: var(--sectionPadding);
+        background-color: #F8F5F1;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at tablet */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-gallery {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* 16px - 20px */
+            gap: clamp(1rem, 1.5vw, 1.25rem);
+        }
+
+        .cs-image {
+            width: 47%;
+            border-radius: (20/16rem);
+            display: block;
+            position: relative;
+            /* clips the image corners */
+            overflow: hidden;
+            aspect-ratio: 1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                /* makes it act like a background image */
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-402 {
+        .cs-container {
+            max-width: (1280/16rem);
+        }
+
+        .cs-image {
+            width: 31.8%;
+            max-width: (300/16rem);
+            aspect-ratio: 1;
+        }
+    }
+}
+
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #gallery-402 {
+        .cs-gallery {
+            justify-content: center;
+            align-items: stretch;
+        }
+        .cs-image {
+            width: (630/16rem);
+            max-width: 100%;
+            height: (400/16rem);
+            &:nth-of-type(2),
+            &:nth-of-type(3),
+            &:nth-of-type(4),
+            &:nth-of-type(5) {
+                width: (305/16rem);
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #gallery-402 {
+            background-color: #230E04;
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+            .cs-text {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+                                
+
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #faq-1108 {
+        padding: var(--sectionPadding);
+        position: relative;
+
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (584/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 32px - 48px */
+            gap: clamp(2rem, 6vw, 3rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-title {
+            /* 32px - 48px */
+            margin: 0 0 clamp(2rem, 5vw, 3rem);
+        }
+
+        .cs-picture {
+            width: 100%;
+            /* 360px - 400px */
+            height: clamp(22.5rem, 54vw, 25rem);
+            display: block;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1em;
+            }
+        }
+
+        .cs-faq-group {
+            width: 100%;
+            max-width: (650/16rem);
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: (12/16rem);
+        }
+
+        .cs-faq-item {
+            list-style: none;
+            width: 100%;
+            background-color: #F8F5F1;
+            /* clips all corners of the button that overlap the rounded border */
+            overflow: hidden;
+            transition: border-bottom 0.3s;
+            border-radius: 0.75em;
+
+            &.active {
+                .cs-button {
+                    color: var(--primary);
+                    &:before {
+                        background-color: var(--primary);
+                        transform: rotate(315deg);
+                    }
+                    &:after {
+                        background-color: var(--primary);
+                        transform: rotate(-315deg);
+                    }
+                }
+                .cs-item-p {
+                    height: auto;
+                    /* 20px - 24px bottom */
+                    /* 16px - 24px left & right */
+                    padding: 0 clamp(1rem, 2vw, 1.5rem)
+                        clamp(1.25rem, 1.3vw, 1.5rem);
+                    opacity: 1;
+                }
+            }
+        }
+
+        .cs-button {
+            /* 16px - 20px */
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            line-height: 1.2em;
+            text-align: left;
+            font-weight: bold;
+            /* 20px - 24px */
+            padding: clamp(1.25rem, 2vw, 1.5rem);
+            background-color: #F8F5F1;
+            border: none;
+            color: var(--headerColor);
+            display: block;
+            width: 100%;
+            position: relative;
+            transition:
+                background-color 0.3s,
+                color 0.3s;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:before {
+                /* left line */
+                content: "";
+                width: (8/16rem);
+                height: (2/16rem);
+                background-color: var(--headerColor);
+                opacity: 1;
+                border-radius: 50%;
+                position: absolute;
+                display: block;
+                top: 50%;
+                right: (24/16rem);
+                transform: rotate(45deg);
+                /* animate the transform from the left side of the x axis, and the center of the y */
+                transform-origin: left center;
+                transition: transform 0.5s;
+            }
+
+            &:after {
+                /* right line */
+                content: "";
+                width: (8/16rem);
+                height: (2/16rem);
+                background-color: var(--headerColor);
+                opacity: 1;
+                border-radius: 50%;
+                position: absolute;
+                display: block;
+                top: 50%;
+                right: (21/16rem);
+                transform: rotate(-45deg);
+                /* animate the transform from the right side of the x axis, and the center of the y */
+                transform-origin: right center;
+                transition: transform 0.5s;
+            }
+        }
+
+        .cs-button-text {
+            width: 80%;
+            display: block;
+        }
+
+        .cs-item-p {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            width: 90%;
+            height: 0;
+            margin: 0;
+            /* 16px - 24px */
+            padding: 0 clamp(1rem, 2vw, 1.5rem);
+            opacity: 0;
+            color: var(--bodyTextColor);
+            /* clips the text so it doesn't show up */
+            overflow: hidden;
+            transition:
+                opacity 0.3s,
+                padding-bottom 0.3s;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #faq-1108 {
+        .cs-container {
+            max-width: (1280/16rem);
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+        }
+
+        .cs-content {
+            width: 40%;
+            text-align: left;
+            align-items: flex-start;
+            /* prevents flexbox from squishing it */
+            flex: none;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #faq-1108 {
+            .cs-title,
+            .cs-item-p {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-faq-item {
+                background-color: var(--accent);
+                &.active {
+                    .cs-button {
+                        background-color: var(--primary);
+                        color: var(--bodyTextColorWhite);
+                        &:before,
+                        &:after {
+                            background-color: var(--bodyTextColorWhite);
+                        }
+                    }
+
+                    .cs-item-p {
+                        /* 20px - 24px */
+                        padding-top: clamp(1.25rem, 1.3vw, 1.5rem);
+                    }
+                }
+            }
+
+            .cs-button {
+                background-color: var(--accent);
+                color: var(--bodyTextColorWhite);
+                &:before,
+                &:after {
+                    background-color: var(--bodyTextColorWhite);
+                }
+            }
+        }
+    }
+}
+
+                                                               
+                                
+
+                                
+
+
+
+	
+
+
+
+</style>

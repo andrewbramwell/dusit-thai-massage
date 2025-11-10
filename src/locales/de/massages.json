@@ -1,0 +1,44 @@
+{
+    "landing": "Massagen",
+    "description": "Traditionelle Thai-Massage, Hot Stone & Reflexzonenmassage in Berlin. Authentische Behandlungen von Wat Po-ausgebildeter Therapeutin. Jetzt buchen.",
+    "layout": {
+        "title": "Traditionelle Thai-Massage Therapie",
+        "description": "Erleben Sie traditionelle Heilbehandlungen, die Ihr Gleichgewicht wiederherstellen, Verspannungen lösen und Körper und Geist revitalisieren."
+    },
+    "services": {
+        "topper": "Unsere Behandlungen",
+        "title": "Traditionelle Thai-Massage Anwendungen",
+        "text": "Entdecken Sie unser Spektrum authentischer Thai-Massage Therapien, jede sorgfältig entwickelt, um Ihre individuellen Wellness-Bedürfnisse zu erfüllen und tiefe Entspannung sowie natürliche Heilung zu fördern.",
+        "items": [
+            {
+                "heading": "Rücken-, Nacken- & Schultermassage",
+                "p": "Lösen Sie Verspannungen genau dort, wo Sie sie spüren - mit unserer therapeutischen Ölmassage für Nacken, Schultern und Rücken. Besonders wohltuend bei Stress durch schweres Heben, Schmerzen vom Schulter- bis Nackenbereich oder Verspannungen im Schulterblatt."
+            },
+            {
+                "heading": "Fußreflexzonen-Massage",
+                "p": "Spüren Sie die Heilkraft der Reflexzonenmassage mit unserer spezialisierten Behandlung mittels traditioneller Holzwerkzeuge. Wir stimulieren gezielt Reflexpunkte von den Füßen bis zu den Knien und lindern Fußschmerzen, Schwellungen oder Kniebeschwerden."
+            },
+            {
+                "heading": "Traditionelle Thai-Massage",
+                "p": "Genießen Sie unsere charakteristische Thai-Massage ohne Öl, die mit Energieleitbahn-Arbeit für tiefe Entspannung beginnt. Ihr Therapeut konzentriert sich auf Ihre persönlichen Problemzonen - ideal für Stressabbau und ganzheitliches Wohlbefinden."
+            },
+            {
+                "heading": "Hot Stone Massage",
+                "p": "Lassen Sie Verspannungen mit unserer wohltuenden Heißstein-Therapie dahinschmelzen. Wir verwenden sorgfältig erwärmte Lavasteine bei optimaler Temperatur, um Entspannung zu verstärken und die natürliche Heilung zu fördern sowie Giftstoffe zu lösen."
+            },
+            {
+                "heading": "Thai Solution Massage",
+                "p": "Die 4+1 Thai Solution Massage (Nuad Benja Phakhi) ist eine fortschrittliche therapeutische Technik, entwickelt von Meister Sutep Mevattana von der THAIBOOST Academy. Sie vereint traditionelle Thai-Massage, Akupunktur, Shiatsu, Tui Na und Physiologie zu einer ganzheitlichen Behandlung, die ohne Öle oder Hilfsmittel durchgeführt wird. Durch Akupressur mit Daumen, Handflächen und Knien werden Meridiane und Triggerpunkte aktiviert, um Energieblockaden zu lösen und Beschwerden wie Schmerzen und Migräne zu lindern. Die Massage wirkt auf Sehnen, Muskeln, Faszien, Nerven, Gelenke und das Skelettsystem – während der Praktizierende einen meditativen Mettā-Zustand kultiviert."
+            },
+            {
+                "heading": "Thai Ayuwattana Massage",
+                "p": "Die Thai Ayuwattana-Massage ist eine therapeutische Heilmassage nach dem Benja Phakhi 4+1 System zur Behandlung von Kopfschmerzen sowie Rücken-, Schulter- und Gelenkschmerzen. Als spezialisierte Folgebehandlung zur Thai Solution Massage dient sie der kontinuierlichen Gesundheitspflege, nachhaltigen Wellness-Management und langfristigen Schmerzprävention durch regelmäßige therapeutische Intervention."
+            },
+            {
+                "heading": "Aromatherapie-Massage",
+                "p": "Entspannen Sie bei unserer wohltuenden Aromatherapie-Massage, bei der sorgfältig ausgewählte ätherische Öle auf sanfte Massagetechniken treffen. Jedes Öl wird für seine einzigartigen therapeutischen Eigenschaften ausgewählt, um Ihre speziellen Bedürfnisse zu erfüllen – ob Sie Stressabbau, besseren Schlaf oder emotionale Ausgeglichenheit suchen."
+            }
+        ],
+        "cta": "Termin Buchen"
+    }
+}

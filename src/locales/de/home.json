@@ -1,0 +1,90 @@
+{
+	"layout": {
+		"title": "Zertifizierte Masseurin",
+		"description": "Authentische Thai-Massage in Wilmersdorf, Berlin von zertifizierter Therapeutin Khun Pui. Traditionelle Heilkunst der Wat Po Schule. Jetzt buchen."
+	},
+	"hero": {
+        "topper": "Authentische Heilkunst",
+        "title": {
+            "1": "Traditionelle Thai-Massage in Wilmersdorf, Berlin"
+        },
+        "p1": "Willkommen bei Anavaree Thai Massage - hier treffen über 20 Jahre authentische thailändische Heiltraditionen auf persönliche Betreuung in Berlin. Unsere zertifizierte Therapeutin Khun Pui bringt bewährte Techniken der renommierten Wat Po Schule aus Thailand mit, um Ihnen Linderung bei Schmerzen, Stress und Verspannungen durch zeiterprobte therapeutische Massage zu verschaffen.",
+        "cta1": "Termin Vereinbaren"
+    },
+	"services": {
+        "topper": "Beliebte Behandlungen",
+        "title": "Berlins Beliebteste Thai-Massage Therapien",
+        "text": "Von gezielter Schmerzlinderung bis zur vollständigen Entspannung - diese authentischen Thai-Massage-Behandlungen werden von unseren Kunden wegen ihrer bewährten therapeutischen Wirkung geschätzt.",
+        "items": [
+            {
+                "heading": "Thai Solution Massage",
+                "p": "Die 4+1 Thai Solution Massage (Nuad Benja Phakhi) ist eine fortschrittliche therapeutische Technik, entwickelt von Meister Sutep Mevattana von der THAIBOOST Academy. Sie vereint traditionelle Thai-Massage, Akupunktur, Shiatsu, Tui Na und Physiologie zu einer ganzheitlichen Behandlung, die ohne Öle oder Hilfsmittel durchgeführt wird. Durch Akupressur mit Daumen, Handflächen und Knien werden Meridiane und Triggerpunkte aktiviert, um Energieblockaden zu lösen und Beschwerden wie Schmerzen und Migräne zu lindern. Die Massage wirkt auf Sehnen, Muskeln, Faszien, Nerven, Gelenke und das Skelettsystem – während der Praktizierende einen meditativen Mettā-Zustand kultiviert."
+            },
+            {
+                "heading": "Thai Ayuwattana Massage",
+                "p": "Die Thai Ayuwattana-Massage ist eine therapeutische Heilmassage nach dem Benja Phakhi 4+1 System zur Behandlung von Kopfschmerzen sowie Rücken-, Schulter- und Gelenkschmerzen. Als spezialisierte Folgebehandlung zur Thai Solution Massage dient sie der kontinuierlichen Gesundheitspflege, nachhaltigen Wellness-Management und langfristigen Schmerzprävention durch regelmäßige therapeutische Intervention."
+            },
+            {
+                "heading": "Traditionelle Thai-Massage",
+                "p": "Genießen Sie unsere charakteristische Thai-Massage ohne Öl, die mit Energieleitbahn-Arbeit für tiefe Entspannung beginnt. Ihr Therapeut konzentriert sich auf Ihre persönlichen Problemzonen - ideal für Stressabbau und ganzheitliches Wohlbefinden."
+            }
+        ],
+        "cta": "Alle Behandlungen Ansehen"
+    },
+	"whyChoose": {
+        "topper": "Warum Anavaree",
+        "title": "Warum Anavaree Thai Massage?",
+        "text": "Erleben Sie den Unterschied, den authentische Ausbildung, persönliche Betreuung und echtes thailändisches Erbe auf Ihrem Heilungsweg machen. Bei Anavaree Thai Massage verbinden wir traditionelle Techniken, die über Generationen weitergegeben wurden, mit modernem therapeutischem Verständnis, um Ergebnisse zu erzielen, die über gewöhnliche Massagen hinausgehen. Unser familiärer Ansatz gewährleistet, dass jeder Kunde individuelle Aufmerksamkeit in einer herzlichen, professionellen Atmosphäre erhält.",
+        "items": [
+            {
+                "heading": "Persönliche Therapeutische Betreuung",
+                "p": "Familienunternehmen mit gründlichen Beratungen, frischen Annehmlichkeiten, kostenlosem Thai-Tee und detaillierter Nachsorgeberatung. Jede Behandlung wird auf Ihre spezifischen Wellness-Bedürfnisse zugeschnitten."
+            },
+            {
+                "heading": "Zertifiziert & Erfahren",
+                "p": "Über 20 Jahre Berufserfahrung mit authentischen Zertifizierungen von Thailands angesehensten Massage-Institutionen. Vollversicherte Praxis mit umfassender Berufshaftpflichtversicherung."
+            },
+            {
+                "heading": "Authentisches Thai-Erbe",
+                "p": "Khun Pui bringt echte thailändische Heiltraditionen aus Nordostthailand mit, ausgebildet an Bangkoks prestigeträchtiger Wat Po Traditional Medical School - dem Geburtsort der traditionellen Thai-Massage."
+            }
+        ]
+    },
+	"sideBySide": {
+        "topper": "Unsere Geschichte",
+        "title": "Lernen Sie Khun Pui & Familie Kennen",
+        "text1": "Von Nordostthailand nach Wilmersdorf, Berlin - Khun Puis Weg begann mit einer Leidenschaft für traditionelle Heilkünste. Ausgebildet an Bangkoks prestigeträchtiger Wat Po Traditional Medical School, bringt sie über 20 Jahre authentische Thai-Massage-Expertise in unsere Praxis.",
+        "text2": "Im September 2025 entstand Anavaree Thai Massage als echtes Familienunternehmen, benannt nach Puis Tochter, die sie zu ihrer Rückkehr in die therapeutische Praxis inspirierte. Heute arbeiten wir als eng verbundenes Team, das sich der echten Heilung durch zeiterprobte thailändische Traditionen widmet.",
+        "cta": "Mehr Erfahren"
+    },
+	"gallery": {
+        "topper": "Galerie",
+        "title": "Treten Sie Ein in Anavaree Thai Massage"
+    },
+	"faq": {
+        "topper": "Häufige Fragen",
+        "title": "Häufig Gestellte Fragen",
+        "items": [
+            {
+                "question": "Was erwartet mich bei meinem ersten Besuch?",
+                "answer": "Ihr erster Besuch beginnt mit einer ausführlichen Beratung, in der wir Ihre Gesundheitsgeschichte, spezifische Beschwerden und Behandlungsziele besprechen. Wir erklären Ihnen die gewählte Behandlung und stellen alle notwendigen Annehmlichkeiten bereit, einschließlich Einwegunterwäsche, Bademänteln und Hausschuhen. Alle Behandlungen beinhalten kostenlosen traditionellen Thai-Tee und detaillierte Nachsorgeberatung für optimale Ergebnisse."
+            },
+            {
+                "question": "Wie oft sollte ich Behandlungen buchen?",
+                "answer": "Die Behandlungshäufigkeit hängt von Ihren individuellen Bedürfnissen und Zielen ab. Für allgemeines Wohlbefinden und Erhaltung eignen sich monatliche Sitzungen gut. Bei spezifischen Beschwerden, chronischen Problemen oder Schmerzmanagement können anfangs wöchentliche Behandlungen vorteilhaft sein. Wir besprechen den besten Zeitplan während Ihrer Beratung basierend auf Ihren spezifischen Anforderungen."
+            },
+            {
+                "question": "Welche Qualifikationen hat Khun Pui?",
+                "answer": "Khun Pui besitzt umfassende Zertifizierungen, einschließlich traditioneller Thai-Massage von der prestigeträchtigen Wat Po Traditional Medical School in Bangkok, Thailand. Sie verfügt über mehr als 20 Jahre Berufserfahrung und authentische Zeugnisse von Thailands angesehensten Massage-Institutionen. Unsere Praxis ist vollversichert mit umfassender Berufshaftpflichtversicherung."
+            },
+            {
+                "question": "Bieten Sie Parkplätze an?",
+                "answer": "Ja, wir bieten kostenpflichtige Straßenparkplätze direkt vor unserer Praxis für Ihre Bequemlichkeit. Zusätzlich stehen kostenlose Parkplätze in nahegelegenen Straßen in Wilmersdorf zur Verfügung. Spezifische Standorte für kostenlose Parkplätze werden Ihnen bei der Terminbuchung mitgeteilt."
+            },
+            {
+                "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+                "answer": "Derzeit akzeptieren wir nur Barzahlungen. Wir planen jedoch, in naher Zukunft Kartenzahlungsoptionen einzuführen, um unseren Kunden mehr Komfort zu bieten. Wir empfehlen, Bargeld für Ihre Behandlungssitzung mitzubringen."
+            }
+        ]
+    }
+}

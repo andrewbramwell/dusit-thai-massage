@@ -1,0 +1,232 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import client from "@data/client.json";
+import Landing from "@components/Landing.astro";
+import { t, getLocalePath } from "i18n:astro";
+
+// Optimize our landing image and pass it as props to the BaseLayout (for preloading) and Landing (for rendering)
+import {getOptimizedImage} from "@utils/utils"
+import landingImage from "@assets/images/landing.jpg"
+const optimizedImage = await getOptimizedImage(landingImage)
+---
+
+<BaseLayout
+  title={t("impressum:title")}
+  description={t("impressum:description")}
+  preloadedImage={optimizedImage}
+>
+  <Landing title={t("impressum:landing")} image={optimizedImage}/>
+
+<section id="impressum-page">
+    <div class="cs-container">
+        <div class="cs-content">
+            <!-- Section 1: TMG -->
+            <h2>{t("impressum:section1.title")}</h2>
+            <p>
+                <strong>{t("impressum:section1.businessName")}</strong><br>
+                {t("impressum:section1.owner")}<br>
+                {t("impressum:section1.address")}<br>
+                {t("impressum:section1.city")}<br>
+                {t("impressum:section1.country")}
+            </p>
+
+            <!-- Section 2: Contact -->
+            <h2>{t("impressum:section2.title")}</h2>
+            <p>
+                <strong>{t("impressum:section2.phone")}</strong> {client.phoneFormatted}<br>
+                <strong>{t("impressum:section2.email")}</strong> <a href={`mailto:${client.email}`}>{client.email}</a><br>
+                <strong>{t("impressum:section2.website")}</strong> <a href="https://anavareethaimassage.de">https://anavareethaimassage.de</a>
+            </p>
+
+            <!-- Section 4: Professional 
+            <h3>{t("impressum:section4.title")}</h3>
+            <p>
+                <strong>{t("impressum:section4.profession")}</strong> {t("impressum:section4.professionTitle")}<br>
+                <strong>{t("impressum:section4.country")}</strong> {t("impressum:section4.countryName")}
+            </p>
+            <p>{t("impressum:section4.regulations")}</p>
+            <ul>
+                <li>{t("impressum:section4.regulation1")}</li>
+                <li>{t("impressum:section4.regulation2")}</li>
+            </ul>-->
+
+            <!-- Section 5: Responsible Person -->
+            <h2>{t("impressum:section5.title")}</h2>
+            <p>
+                {t("impressum:section5.responsible")}<br>
+                {t("impressum:section5.address")}
+            </p>
+
+            <!-- Section 6: EU Dispute -->
+            <h2>{t("impressum:section6.title")}</h2>
+            <p>
+                {t("impressum:section6.content")}<br>
+                <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">{t("impressum:section6.linkText")}</a><br>
+                {t("impressum:section6.email")}
+            </p>
+
+            <!-- Section 7: Consumer Dispute -->
+            <h2>{t("impressum:section7.title")}</h2>
+            <p>{t("impressum:section7.content")}</p>
+
+            <!-- Section 8: Liability Content -->
+            <h2>{t("impressum:section8.title")}</h2>
+            <p>{t("impressum:section8.content")}</p>
+
+            <!-- Section 9: Liability Links -->
+            <h2>{t("impressum:section9.title")}</h2>
+            <p>{t("impressum:section9.content")}</p>
+
+            <!-- Section 10: Copyright -->
+            <h2>{t("impressum:section10.title")}</h2>
+            <p>{t("impressum:section10.content")}</p>
+        </div>
+    </div>
+</section>
+
+</BaseLayout>
+
+<style lang="less">
+
+/* PAGE-SPECIFIC STYLES FOR THE IMPRESSUM PAGE */
+
+/*-- -------------------------- -->
+<---       Impressum Page       -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #impressum-page {
+        padding: var(--sectionPadding);
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+
+        .cs-container {
+            width: 100%;
+            max-width: (1280/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .cs-content {
+            text-align: left;
+            width: 100%;
+            max-width: (738/16rem);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+            text-align: inherit;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--headerColor);
+        }
+
+        h2 {
+            font-size: (32/16rem);
+            margin-top: (32/16rem);
+        }
+
+        h3 {
+            font-size: (24/16rem);
+            color: var(--primary);
+        }
+
+        h4,
+        h5,
+        h6 {
+            font-size: (20/16rem);
+        }
+
+        p {
+            font-size: var(--bodyFontSize);
+            line-height: 1.5em;
+            text-align: inherit;
+            width: 100%;
+            margin: 0 0 (16/16rem) 0;
+            color: var(--bodyTextColor);
+            
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+            }
+        }
+
+        ul {
+            padding-left: (24/16rem);
+            margin: 0 0 (32/16rem) 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            flex-direction: column;
+            gap: (16/16rem);
+
+            li {
+                list-style: none;
+                color: inherit;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: (10/16rem);
+                    left: (-12/16rem);
+                }
+            }
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #impressum-page {
+            background-color: var(--dark);
+
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            li,
+            p {
+                color: var(--bodyTextColorWhite);
+            }
+            
+            h3,
+            a {
+                color: var(--primaryLight);
+            }
+
+            p,
+            li {
+                color: #ebebeb;
+            }
+        }
+    }
+}
+
+</style>

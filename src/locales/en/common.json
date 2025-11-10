@@ -1,0 +1,69 @@
+{
+    "home": "Home",
+    "about": "About",
+    "massages": "Massages",
+    "contact": "Contact",
+    "theme-label": "Choisissez le thème",
+    "language-label": "Choisissez la langue",
+    "languageSelect": {
+        "de": "Deutsch",
+        "en": "English"
+      },
+    "themeSelect": {
+        "accessibleLabel": "Select Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "auto": "Auto"
+    },
+    "cta": {
+        "topper": "Book Today",
+        "title": "Experience Authentic Thai Healing",
+        "text": "Ready to relieve tension and restore balance? Our traditional Thai massage treatments are designed to address your specific wellness needs with genuine therapeutic care.",
+        "cta": "Book Your Treatment"
+    },
+    "about-page": {
+        "landing": "About",
+        "description": "Meet Khun Pui, certified Thai massage therapist trained at Bangkok's Wat Po school. Family-run practice in Wilmersdorf bringing 20+ years expertise.",
+        "topper": "Our Story",
+        "title": "Authentic Thai Healing in the Heart of Berlin",
+        "p-1": "Khun Pui's journey began in Northeast Thailand, where she first discovered her passion for traditional healing arts. After moving to Berlin in 2000, she returned to Thailand to train at the prestigious Wat Po Traditional Medical School in Bangkok - the birthplace of traditional Thai massage. This intensive certification equipped her with authentic techniques passed down through generations of Thai healers.",
+        "p-2": "In September 2025, Anavaree Thai Massage was born as a true family enterprise, named lovingly after Pui's daughter who inspired her return to massage therapy. With over 20 years of experience, Pui works alongside her daughter as co-practitioner, while her supportive husband ensures every aspect runs smoothly. This family approach means every client receives genuine, personal care.",
+        "p-3": "What sets us apart is our commitment to comprehensive therapeutic care. Every treatment begins with a thorough consultation, includes fresh linens and complimentary Thai tea, and ends with personalized aftercare guidance.",
+        "p-4": "We specialize in neck, shoulder, and back conditions, with many clients experiencing significant improvement after just one session.",
+        "rank": "Owner",
+        "cta": "Book Treatment",
+        "ourStory": {
+            "items": [
+                {
+                    "heading": "Our Journey",
+                    "p": "Established in September 2025, our practice represents the culmination of Khun Pui's 20+ year journey from Northeast Thailand to becoming Berlin's trusted Thai massage specialist."
+                },
+                {
+                    "heading": "Our Team", 
+                    "p": "We operate as a close-knit family team with two primary practitioners - Khun Pui and her daughter - supported by her husband who handles business operations."
+                },
+                {
+                    "heading": "Our Space",
+                    "p": "Our serene practice features four professional massage beds in an aromatherapy environment, complete with private facilities and convenient street parking options."
+                }
+            ]
+        }
+    },
+    "footer": {
+        "information": "Information",
+        "services": "Services",
+        "contact": "Contact",
+        "click": "Click to email",
+        "p": "Extra content if you need it, if not you can delete this whole p tag. I usually do.",
+        "credit": "Designed and Hand Coded by "
+    },
+    "notFound": {
+        "pageNotFound": "404 - The page you're looking for does not exist.",
+        "linkText": "Back to homepage"
+    },
+    "skipLink": "Click To Skip To Main Content",
+    "pagination": {
+        "previous": "Prev",
+        "next": "Next"
+    }
+}
