@@ -1,44 +1,52 @@
 {
     "landing": "Massagen",
-    "description": "Traditionelle Thai-Massage, Hot Stone & Reflexzonenmassage in Berlin. Authentische Behandlungen von Wat Po-ausgebildeter Therapeutin. Jetzt buchen.",
+    "description": "Individuelle Thai-Massage Behandlungen in Berlin von Lamai. Effektive Hilfe bei chronischen Schmerzen, Verspannungen und Stress. Traditionelle Techniken für Ihre Bedürfnisse.",
     "layout": {
-        "title": "Traditionelle Thai-Massage Therapie",
-        "description": "Erleben Sie traditionelle Heilbehandlungen, die Ihr Gleichgewicht wiederherstellen, Verspannungen lösen und Körper und Geist revitalisieren."
+        "title": "Authentische Thai-Massage Behandlungen",
+        "description": "Erleben Sie therapeutische Behandlungen, die auf Ihre individuellen Bedürfnisse abgestimmt sind – von tiefer Schmerzlinderung bis zur vollständigen Entspannung."
     },
     "services": {
-        "topper": "Unsere Behandlungen",
-        "title": "Traditionelle Thai-Massage Anwendungen",
-        "text": "Entdecken Sie unser Spektrum authentischer Thai-Massage Therapien, jede sorgfältig entwickelt, um Ihre individuellen Wellness-Bedürfnisse zu erfüllen und tiefe Entspannung sowie natürliche Heilung zu fördern.",
-        "items": [
-            {
-                "heading": "Rücken-, Nacken- & Schultermassage",
-                "p": "Lösen Sie Verspannungen genau dort, wo Sie sie spüren - mit unserer therapeutischen Ölmassage für Nacken, Schultern und Rücken. Besonders wohltuend bei Stress durch schweres Heben, Schmerzen vom Schulter- bis Nackenbereich oder Verspannungen im Schulterblatt."
-            },
-            {
-                "heading": "Fußreflexzonen-Massage",
-                "p": "Spüren Sie die Heilkraft der Reflexzonenmassage mit unserer spezialisierten Behandlung mittels traditioneller Holzwerkzeuge. Wir stimulieren gezielt Reflexpunkte von den Füßen bis zu den Knien und lindern Fußschmerzen, Schwellungen oder Kniebeschwerden."
-            },
-            {
-                "heading": "Traditionelle Thai-Massage",
-                "p": "Genießen Sie unsere charakteristische Thai-Massage ohne Öl, die mit Energieleitbahn-Arbeit für tiefe Entspannung beginnt. Ihr Therapeut konzentriert sich auf Ihre persönlichen Problemzonen - ideal für Stressabbau und ganzheitliches Wohlbefinden."
-            },
-            {
-                "heading": "Hot Stone Massage",
-                "p": "Lassen Sie Verspannungen mit unserer wohltuenden Heißstein-Therapie dahinschmelzen. Wir verwenden sorgfältig erwärmte Lavasteine bei optimaler Temperatur, um Entspannung zu verstärken und die natürliche Heilung zu fördern sowie Giftstoffe zu lösen."
-            },
-            {
-                "heading": "Thai Solution Massage",
-                "p": "Die 4+1 Thai Solution Massage (Nuad Benja Phakhi) ist eine fortschrittliche therapeutische Technik, entwickelt von Meister Sutep Mevattana von der THAIBOOST Academy. Sie vereint traditionelle Thai-Massage, Akupunktur, Shiatsu, Tui Na und Physiologie zu einer ganzheitlichen Behandlung, die ohne Öle oder Hilfsmittel durchgeführt wird. Durch Akupressur mit Daumen, Handflächen und Knien werden Meridiane und Triggerpunkte aktiviert, um Energieblockaden zu lösen und Beschwerden wie Schmerzen und Migräne zu lindern. Die Massage wirkt auf Sehnen, Muskeln, Faszien, Nerven, Gelenke und das Skelettsystem – während der Praktizierende einen meditativen Mettā-Zustand kultiviert."
-            },
-            {
-                "heading": "Thai Ayuwattana Massage",
-                "p": "Die Thai Ayuwattana-Massage ist eine therapeutische Heilmassage nach dem Benja Phakhi 4+1 System zur Behandlung von Kopfschmerzen sowie Rücken-, Schulter- und Gelenkschmerzen. Als spezialisierte Folgebehandlung zur Thai Solution Massage dient sie der kontinuierlichen Gesundheitspflege, nachhaltigen Wellness-Management und langfristigen Schmerzprävention durch regelmäßige therapeutische Intervention."
-            },
-            {
-                "heading": "Aromatherapie-Massage",
-                "p": "Entspannen Sie bei unserer wohltuenden Aromatherapie-Massage, bei der sorgfältig ausgewählte ätherische Öle auf sanfte Massagetechniken treffen. Jedes Öl wird für seine einzigartigen therapeutischen Eigenschaften ausgewählt, um Ihre speziellen Bedürfnisse zu erfüllen – ob Sie Stressabbau, besseren Schlaf oder emotionale Ausgeglichenheit suchen."
-            }
-        ],
-        "cta": "Termin Buchen"
-    }
+    "topper": "Unsere Behandlungen",
+    "title": "Bewährte Therapien für nachhaltige Linderung",
+    "text": "Jede Massage wird von Lamai persönlich auf Ihre Beschwerden und Verspannungsmuster abgestimmt. Von chronischen Schmerzen bis zum Stressabbau – erleben Sie den Unterschied individueller, therapeutischer Behandlung.",
+    "items": [
+      {
+        "heading": "Traditionelle Thai-Massage",
+        "p": "Erleben Sie unsere charakteristische ölfreie Behandlung, die sich auf den gesamten Körper konzentriert, einschließlich Muskeln, Gelenke und Energielinien. Durch rhythmischen Druck und Dehntechniken fördert diese alte Praxis tiefe Entspannung und löst chronische Verspannungen im ganzen Körper."
+      },
+      {
+        "heading": "Prana Thai Rückenmassage",
+        "p": "Therapeutische Drucktechniken zielen auf Ihre Rückenmuskulatur ab, um den Sauerstofffluss zu erhöhen und angesammelte Giftstoffe aus gestressten Bereichen zu lösen. Diese fokussierte Behandlung lindert effektiv Schulter-, Nacken- und Rückenverspannungen und fördert natürliche Heilung sowie verbesserte Durchblutung."
+      },
+      {
+        "heading": "Marma Aroma-Ölmassage",
+        "p": "Sanfte Massagetechniken kombinieren aromatische Öle mit gezielter Marma-Punkt-Stimulation, um den Energiefluss Ihres Körpers zu harmonisieren. Diese wohltuende Behandlung löst Verspannungen, schafft ein Gefühl von Leichtigkeit und bietet idealen Stressabbau durch achtsame Berührung und therapeutische Öle."
+      },
+      {
+        "heading": "Aroma-Ölmassage",
+        "p": "Tauchen Sie ein in eine beruhigende Aromatherapie-Erfahrung, bei der ätherische Öle über die Haut aufgenommen und eingeatmet werden. Diese auf Achtsamkeit fokussierte Behandlung fördert tiefe Entspannung, bringt Emotionen ins Gleichgewicht und lässt Sie zentriert und erfrischt zurück."
+      },
+      {
+        "heading": "Hot Stone Massage",
+        "p": "Warme Basaltsteine gleiten mit sanftem, wohltuendem Druck über Ihren Körper und lassen tiefsitzende Verspannungen schmelzen. Die heilende Wärme verbessert die Durchblutung, fördert natürliche Entgiftung und hinterlässt ein erfrischtes, verjüngtes Gefühl. Perfekt für tiefgreifenden Stressabbau und Wohlbefinden."
+      },
+      {
+        "heading": "Kräuterstempel-Massage",
+        "p": "Dampfende Kräuterstempel mit aromatischen thailändischen Kräutern gleiten sanft über Ihre Haut und entfalten ihre therapeutischen Eigenschaften. Die Wärme öffnet die Poren, verbessert die Durchblutung und löst muskuläre Verspannungen, während ätherische Öle und Kräuter Ihren Körper sanft beruhigen, revitalisieren und ins natürliche Gleichgewicht bringen."
+      },
+      {
+        "heading": "Fußreflexzonenmassage",
+        "p": "Therapeutische Massage von Reflexzonen an Ihren Füßen, die Organen und Systemen im ganzen Körper entsprechen. Durch gezielten Druck und sanftes Dehnen werden Verspannungen gelöst, Durchblutung und Lymphfluss verbessert und Ihr gesamter Organismus harmonisiert und ins Gleichgewicht gebracht."
+      },
+      {
+        "heading": "Sportmassage",
+        "p": "Spezialisierte Behandlung für Sportler, die Muskeln, Sehnen und Bänder durch Dehn- und fokussierte Drucktechniken gezielt behandelt. Diese Massage verbessert die Durchblutung, stimuliert den Muskelstoffwechsel, unterstützt die Regeneration nach dem Training, steigert die Leistung und hilft Verletzungen vorzubeugen. Ideal vor oder nach Trainingseinheiten."
+      },
+      {
+        "heading": "Paarmassage",
+        "p": "Teilen Sie eine entspannende Auszeit, während zwei erfahrene Therapeuten gleichzeitig an Ihrem Rücken, Schultern, Nacken und Beinen arbeiten. Wählen Sie zwischen sanften beruhigenden Techniken oder aromatischer Ölmassage. Diese harmonische Behandlung fördert Entspannung, reduziert Stress und stärkt Ihre gemeinsame Verbindung."
+      }
+    ],
+    "cta": "Termin Buchen"
+  }
 }

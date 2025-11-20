@@ -46,7 +46,6 @@ const currentYear = getCurrentYear();
           <li>
             <a href={getLocalePath("/contact")}>
               {client.address.lineOne}<br />
-              {client.address.lineTwo}<br />
               {client.address.city}
               {client.address.state}
               {client.address.zip}
@@ -85,7 +84,7 @@ const currentYear = getCurrentYear();
         .logo {
           text-align: center;
           width: auto;
-          height: (96/16em); /* increased from 32/16em by 100% (32 * 2 = 64) */
+          height: (180/16em); /* increased from 32/16em by 100% (32 * 2 = 64) */
           margin: auto;
           margin-bottom: (30/16em);
           display: inline-block;
@@ -250,7 +249,7 @@ const currentYear = getCurrentYear();
 
         .logo {
           text-align: left;
-          height: (120/16em);
+          height: (220/16em);
           margin-left: 0;
         }
 

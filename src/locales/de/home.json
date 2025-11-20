@@ -1,89 +1,101 @@
 {
-	"layout": {
-		"title": "Zertifizierte Masseurin",
-		"description": "Authentische Thai-Massage in Wilmersdorf, Berlin von zertifizierter Therapeutin Khun Pui. Traditionelle Heilkunst der Wat Po Schule. Jetzt buchen."
-	},
-	"hero": {
-        "topper": "Authentische Heilkunst",
-        "title": {
-            "1": "Traditionelle Thai-Massage in Wilmersdorf, Berlin"
-        },
-        "p1": "Willkommen bei Anavaree Thai Massage - hier treffen über 20 Jahre authentische thailändische Heiltraditionen auf persönliche Betreuung in Berlin. Unsere zertifizierte Therapeutin Khun Pui bringt bewährte Techniken der renommierten Wat Po Schule aus Thailand mit, um Ihnen Linderung bei Schmerzen, Stress und Verspannungen durch zeiterprobte therapeutische Massage zu verschaffen.",
-        "cta1": "Termin Vereinbaren"
-    },
+  "layout": {
+    "title": "Masseurin",
+    "description": "Authentische Thai-Massage bei Dusit Thai Massage in Berlin. Individuelle Behandlungen für Schmerzlinderung, Verspannungen & Entspannung. Jetzt buchen."
+  },
+  "hero": {
+    "topper": "Echte Thai-Massage",
+    "title": "Professionelle Thai-Massage Behandlungen in Berlin",
+    "cta1": "Jetzt Termin Buchen"
+  },
 	"services": {
-        "topper": "Beliebte Behandlungen",
-        "title": "Berlins Beliebteste Thai-Massage Therapien",
-        "text": "Von gezielter Schmerzlinderung bis zur vollständigen Entspannung - diese authentischen Thai-Massage-Behandlungen werden von unseren Kunden wegen ihrer bewährten therapeutischen Wirkung geschätzt.",
+    "topper": "Ausgewählte Behandlungen",
+    "title": "Traditionelle Heilkunst für modernes Wohlbefinden",
+    "text": "Jede Behandlung verbindet fachkundige Techniken mit persönlicher Aufmerksamkeit und hilft Ihnen, Stress zu bewältigen, Verspannungen zu lösen und Körper und Geist ins Gleichgewicht zu bringen.",
         "items": [
             {
-                "heading": "Thai Solution Massage",
-                "p": "Die 4+1 Thai Solution Massage (Nuad Benja Phakhi) ist eine fortschrittliche therapeutische Technik, entwickelt von Meister Sutep Mevattana von der THAIBOOST Academy. Sie vereint traditionelle Thai-Massage, Akupunktur, Shiatsu, Tui Na und Physiologie zu einer ganzheitlichen Behandlung, die ohne Öle oder Hilfsmittel durchgeführt wird. Durch Akupressur mit Daumen, Handflächen und Knien werden Meridiane und Triggerpunkte aktiviert, um Energieblockaden zu lösen und Beschwerden wie Schmerzen und Migräne zu lindern. Die Massage wirkt auf Sehnen, Muskeln, Faszien, Nerven, Gelenke und das Skelettsystem – während der Praktizierende einen meditativen Mettā-Zustand kultiviert."
-            },
-            {
-                "heading": "Thai Ayuwattana Massage",
-                "p": "Die Thai Ayuwattana-Massage ist eine therapeutische Heilmassage nach dem Benja Phakhi 4+1 System zur Behandlung von Kopfschmerzen sowie Rücken-, Schulter- und Gelenkschmerzen. Als spezialisierte Folgebehandlung zur Thai Solution Massage dient sie der kontinuierlichen Gesundheitspflege, nachhaltigen Wellness-Management und langfristigen Schmerzprävention durch regelmäßige therapeutische Intervention."
-            },
-            {
                 "heading": "Traditionelle Thai-Massage",
-                "p": "Genießen Sie unsere charakteristische Thai-Massage ohne Öl, die mit Energieleitbahn-Arbeit für tiefe Entspannung beginnt. Ihr Therapeut konzentriert sich auf Ihre persönlichen Problemzonen - ideal für Stressabbau und ganzheitliches Wohlbefinden."
+                "p": "Erleben Sie unsere charakteristische ölfreie Behandlung, die sich auf den gesamten Körper konzentriert, einschließlich Muskeln, Gelenke und Energielinien."
+            },
+            {
+                "heading": "Aroma-Ölmassage",
+                "p": "Tauchen Sie ein in eine beruhigende Aromatherapie-Erfahrung, bei der ätherische Öle über die Haut aufgenommen und eingeatmet werden."
+            },
+            {
+                "heading": "Hot Stone Massage",
+                "p": "Warme Basaltsteine gleiten mit sanftem, wohltuendem Druck über Ihren Körper und lassen tiefsitzende Verspannungen schmelzen."
             }
         ],
         "cta": "Alle Behandlungen Ansehen"
     },
 	"whyChoose": {
-        "topper": "Warum Anavaree",
-        "title": "Warum Anavaree Thai Massage?",
-        "text": "Erleben Sie den Unterschied, den authentische Ausbildung, persönliche Betreuung und echtes thailändisches Erbe auf Ihrem Heilungsweg machen. Bei Anavaree Thai Massage verbinden wir traditionelle Techniken, die über Generationen weitergegeben wurden, mit modernem therapeutischem Verständnis, um Ergebnisse zu erzielen, die über gewöhnliche Massagen hinausgehen. Unser familiärer Ansatz gewährleistet, dass jeder Kunde individuelle Aufmerksamkeit in einer herzlichen, professionellen Atmosphäre erhält.",
+        "topper": "Warum Dusit Thai Massage",
+        "title": "Authentische Expertise, der Sie vertrauen können",
+        "text": "Erleben Sie den Unterschied echter Thai-Massage, verwurzelt in authentischer Tradition und auf Ihre Bedürfnisse abgestimmt. Lamai verbindet versierte therapeutische Techniken mit aufmerksamer Betreuung und erhält durchweg 5-Sterne-Bewertungen von zufriedenen Berliner Kunden.",
         "items": [
             {
-                "heading": "Persönliche Therapeutische Betreuung",
-                "p": "Familienunternehmen mit gründlichen Beratungen, frischen Annehmlichkeiten, kostenlosem Thai-Tee und detaillierter Nachsorgeberatung. Jede Behandlung wird auf Ihre spezifischen Wellness-Bedürfnisse zugeschnitten."
+                "heading": "Individuelle Behandlungen",
+                "p": "Jede Massage wird auf Ihre persönlichen Beschwerden und Verspannungsmuster abgestimmt. Lamai nimmt sich Zeit zuzuhören und Ihre Bedürfnisse zu verstehen, um eine gezielte Behandlung mit echten Ergebnissen zu gewährleisten."
             },
             {
-                "heading": "Zertifiziert & Erfahren",
-                "p": "Über 20 Jahre Berufserfahrung mit authentischen Zertifizierungen von Thailands angesehensten Massage-Institutionen. Vollversicherte Praxis mit umfassender Berufshaftpflichtversicherung."
+                "heading": "Thai-Tradition",
+                "p": "Authentische Thai-Massage Techniken, erlernt in Thailand und verfeinert durch jahrzehntelange Praxis. Traditionelle Heilmethoden, die auf echtem Wissen und Verständnis der Druckpunkte des Körpers basieren."
             },
             {
-                "heading": "Authentisches Thai-Erbe",
-                "p": "Khun Pui bringt echte thailändische Heiltraditionen aus Nordostthailand mit, ausgebildet an Bangkoks prestigeträchtiger Wat Po Traditional Medical School - dem Geburtsort der traditionellen Thai-Massage."
+                "heading": "Von Kunden geschätzt",
+                "p": "Durchgehend mit 5 Sternen auf Google bewertet von Kunden, die bedeutende Schmerzlinderung und nachhaltige Verbesserungen erleben. Lesen Sie Bewertungen, die sowohl die therapeutische Wirksamkeit als auch die warme, fürsorgliche Atmosphäre loben."
             }
         ]
     },
 	"sideBySide": {
         "topper": "Unsere Geschichte",
-        "title": "Lernen Sie Khun Pui & Familie Kennen",
-        "text1": "Von Nordostthailand nach Wilmersdorf, Berlin - Khun Puis Weg begann mit einer Leidenschaft für traditionelle Heilkünste. Ausgebildet an Bangkoks prestigeträchtiger Wat Po Traditional Medical School, bringt sie über 20 Jahre authentische Thai-Massage-Expertise in unsere Praxis.",
-        "text2": "Im September 2025 entstand Anavaree Thai Massage als echtes Familienunternehmen, benannt nach Puis Tochter, die sie zu ihrer Rückkehr in die therapeutische Praxis inspirierte. Heute arbeiten wir als eng verbundenes Team, das sich der echten Heilung durch zeiterprobte thailändische Traditionen widmet.",
-        "cta": "Mehr Erfahren"
+        "title": "Lernen Sie Khun Lamai kennen",
+        "text1": "Lamai erlernte die Kunst der Thai-Massage von ihrer Mutter in Buriram, Thailand, lange bevor sie vor 30 Jahren nach Deutschland kam. Dieses authentische Wissen, weitergegeben durch praktische Übung, bildet ihr Fundament während ihrer gesamten Laufbahn.",
+        "text2": "Nach wertvoller Erfahrung in einem Berliner Massagestudio eröffnete sie 2025 Dusit Thai Massage, um persönliche, therapeutische Behandlungen anzubieten. Heute bringt sie jahrzehntelange Expertise und echte Thai-Heiltraditionen in jede Sitzung ein und hilft Kunden, wirkliche Linderung von Schmerzen und Stress zu finden.",
+        "cta": "Unsere Geschichte"
+    },
+    "reviews": {
+        "topper": "Kundenbewertungen",
+        "title": "Echte Linderung, Echte Ergebnisse",
+        "text": "Kunden loben durchweg Lamais Fähigkeit, Verspannungen zu erkennen und zu lösen, die andere übersehen. Erfahren Sie, warum Berliner Dusit Thai Massage für effektive Schmerzlinderung und nachhaltige Verbesserungen vertrauen.",
+        "items": [
+        {
+            "review": "Ganz toll! Hatte schlimme Nackenprobleme, die schon nach der ersten Behandlung deutlich besser wurden. Fühle mich sehr gut aufgehoben und komme jetzt wöchentlich.",
+            "name": "Reinhard Meissl"
+        },
+        {
+            "review": "Super, ich fühl mich so gut. Habe um 16:45 angerufen und zu 17:30 lag ich schon auf der Liege.. Ich bin so froh, dieses Studio ausgewählt zu haben. Bin nächste Woche gleich wieder da. Gute Kommunikation, sehr sauber 😊",
+            "name": "Leila Karadeniz"
+        }
+        ]
     },
 	"gallery": {
         "topper": "Galerie",
         "title": "Treten Sie Ein in Anavaree Thai Massage"
     },
 	"faq": {
-        "topper": "Häufige Fragen",
-        "title": "Häufig Gestellte Fragen",
+        "topper": "Häufig gestellte Fragen",
+        "title": "Ihre Fragen beantwortet",
         "items": [
             {
+                "question": "Gibt es Parkplätze bei Dusit Thai Massage?",
+                "answer": "Ja, kostenlose Parkplätze an der Straße sind in der Nähe unseres Studios verfügbar, sodass Sie uns bequem ohne Parksorgen besuchen können."
+            },
+            {
                 "question": "Was erwartet mich bei meinem ersten Besuch?",
-                "answer": "Ihr erster Besuch beginnt mit einer ausführlichen Beratung, in der wir Ihre Gesundheitsgeschichte, spezifische Beschwerden und Behandlungsziele besprechen. Wir erklären Ihnen die gewählte Behandlung und stellen alle notwendigen Annehmlichkeiten bereit, einschließlich Einwegunterwäsche, Bademänteln und Hausschuhen. Alle Behandlungen beinhalten kostenlosen traditionellen Thai-Tee und detaillierte Nachsorgeberatung für optimale Ergebnisse."
+                "answer": "Lamai bespricht Ihre spezifischen Beschwerden, Verspannungsbereiche und Gesundheitsziele vor Ihrer Behandlung. Sie passt die Massage auf Ihre individuellen Bedürfnisse an und stellt sicher, dass Sie die effektivste therapeutische Betreuung erhalten. Bequeme Kleidung wird für traditionelle Thai-Massage bereitgestellt."
             },
             {
-                "question": "Wie oft sollte ich Behandlungen buchen?",
-                "answer": "Die Behandlungshäufigkeit hängt von Ihren individuellen Bedürfnissen und Zielen ab. Für allgemeines Wohlbefinden und Erhaltung eignen sich monatliche Sitzungen gut. Bei spezifischen Beschwerden, chronischen Problemen oder Schmerzmanagement können anfangs wöchentliche Behandlungen vorteilhaft sein. Wir besprechen den besten Zeitplan während Ihrer Beratung basierend auf Ihren spezifischen Anforderungen."
+                "question": "Was ist der Unterschied zwischen Thai-Massage und Ölmassage?",
+                "answer": "Traditionelle Thai-Massage wird ohne Öl durchgeführt und verwendet rhythmischen Druck sowie Dehntechniken an Energielinien und Druckpunkten. Ölmassage nutzt aromatische Öle mit fließenden, sanften Bewegungen. Beide sind therapeutisch, bieten aber unterschiedliche Erfahrungen – Lamai kann empfehlen, welche am besten zu Ihren Bedürfnissen passt."
             },
             {
-                "question": "Welche Qualifikationen hat Khun Pui?",
-                "answer": "Khun Pui besitzt umfassende Zertifizierungen, einschließlich traditioneller Thai-Massage von der prestigeträchtigen Wat Po Traditional Medical School in Bangkok, Thailand. Sie verfügt über mehr als 20 Jahre Berufserfahrung und authentische Zeugnisse von Thailands angesehensten Massage-Institutionen. Unsere Praxis ist vollversichert mit umfassender Berufshaftpflichtversicherung."
+                "question": "Wie erfahren ist Lamai?",
+                "answer": "Lamai erlernte Thai-Massage von ihrer Mutter in Thailand und verfügt über mehr als 30 Jahre praktische Erfahrung. Sie arbeitete professionell in einem Berliner Massagestudio, bevor sie Dusit Thai Massage eröffnete, und bringt authentisches Thai-Heilwissen sowie jahrzehntelange Expertise in jede Behandlung ein."
             },
             {
-                "question": "Bieten Sie Parkplätze an?",
-                "answer": "Ja, wir bieten kostenpflichtige Straßenparkplätze direkt vor unserer Praxis für Ihre Bequemlichkeit. Zusätzlich stehen kostenlose Parkplätze in nahegelegenen Straßen in Wilmersdorf zur Verfügung. Spezifische Standorte für kostenlose Parkplätze werden Ihnen bei der Terminbuchung mitgeteilt."
-            },
-            {
-                "question": "Welche Zahlungsmethoden akzeptieren Sie?",
-                "answer": "Derzeit akzeptieren wir nur Barzahlungen. Wir planen jedoch, in naher Zukunft Kartenzahlungsoptionen einzuführen, um unseren Kunden mehr Komfort zu bieten. Wir empfehlen, Bargeld für Ihre Behandlungssitzung mitzubringen."
+                "question": "Wie buche ich einen Termin?",
+                "answer": "Sie können direkt über unser Online-Buchungssystem buchen, uns anrufen oder eine Nachricht per WhatsApp senden. Wir empfehlen, im Voraus zu buchen, um Ihre Wunschzeit zu sichern, besonders für Wochenendtermine."
             }
         ]
     }

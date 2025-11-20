@@ -1,17 +1,17 @@
 {
-	"name": "Anavaree Thai Massage",
-	"email": "anavareemassage@gmail.com",
-	"phoneForTel": "+493071056894",
-	"phoneFormatted": "+49 (0)30 7105 6894",
+	"name": "Dusit Thai Massage",
+	"email": "dusit.thaimassage.berlin@gmail.com",
+	"phoneForTel": "+4917688060631",
+	"phoneFormatted": "+49 (0)176 88060631",
 	"openingHours": "",
-	"bookingLink": "https://anavareethaimassage.setmore.com/",
+	"bookingLink": "https://dusitthaimassage.setmore.com/",
 	"address": {
-		"lineOne": "Brandenburgische Str. 74",
-		"lineTwo": "Wilmersdorf",
+		"lineOne": "Dunckerstraße 70",
+		"lineTwo": "",
 		"city": "Berlin",
 		"state": "",
-		"zip": "10713",
-		"mapLink": "https://maps.app.goo.gl/QFfiUMEEPJZKKp3X6"
+		"zip": "10437",
+		"mapLink": "https://maps.app.goo.gl/gNLd3YwHWdPVhCMG8"
 	},
-	"domain": "anavareethaimassage.de"
+	"domain": "https://www.dusitthaimassage.de"
 }

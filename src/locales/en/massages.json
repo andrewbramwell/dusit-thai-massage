@@ -1,44 +1,52 @@
 {
     "landing": "Massages",
-    "description": "Traditional Thai massage, hot stone therapy & reflexology in Berlin. Authentic treatments by Wat Po-trained therapist. Relieve pain & restore balance.",
+    "description": "Personalized Thai massage treatments in Berlin by Lamai. Effective relief for chronic pain, tension, and stress. Traditional techniques tailored to your needs.",
     "layout": {
-        "title": "Authentic Thai Massage Therapy",
-        "description": "Experience traditional healing treatments designed to restore balance, relieve tension, and rejuvenate your body and mind."
+        "title": "Authentic Thai Massage Treatments",
+        "description": "Experience therapeutic treatments tailored to your individual needs—from deep pain relief to complete relaxation."
     },
     "services": {
-        "topper": "Our Treatments",
-        "title": "Traditional Thai Massage Services",
-        "text": "Discover our range of authentic Thai massage therapies, each carefully crafted to address your specific wellness needs and promote deep relaxation and natural healing.",
-        "items": [
-            {
-                "heading": "Back, Neck & Shoulder Massage",
-                "p": "Target tension where you need it most with our therapeutic oil massage focusing on your neck, shoulders, and back. Perfect for relieving stress from heavy lifting, shoulder-to-neck pain, or tightness in the shoulder blade area."
-            },
-            {
-                "heading": "Foot Reflexology Massage",
-                "p": "Experience the healing power of reflexology with our specialized treatment using traditional wooden tools. We apply targeted pressure to reflex points from your feet to knees, providing relief for foot pain, swelling, or knee discomfort."
-            },
-            {
-                "heading": "Traditional Thai Massage",
-                "p": "Enjoy our signature oil-free Thai massage, beginning with energy line work to promote deep relaxation. Your therapist will focus on your specific areas of concern, making this ideal for stress relief and overall wellness."
-            },
-            {
-                "heading": "Hot Stone Massage",
-                "p": "Melt away tension with our soothing hot stone therapy. We use carefully heated lava stones at optimal temperatures to enhance relaxation and promote natural healing, helping to release toxins and restore balance."
-            },
-            {
-                "heading": "Thai Solution Massage",
-                "p": "The 4+1 Thai Solution Massage (Nuad Benja Phakhi) is an advanced therapeutic technique developed by Master Sutep Mevattana of the THAIBOOST Academy. It combines traditional Thai massage, acupuncture, shiatsu, Tui Na, and physiology into a holistic treatment performed without oils or aids. Through acupressure using thumbs, palms, and knees, meridians and trigger points are activated to release energy blockages and alleviate ailments such as pain and migraines. The massage works on tendons, muscles, fascia, nerves, joints, and the skeletal system – while the practitioner cultivates a meditative Mettā state."
-            },
-            {
-                "heading": "Thai Ayuwattana Massage",
-                "p": "The Thai Ayuwattana Massage is a therapeutic healing massage based on the Benja Phakhi 4+1 system for treating headaches, back, shoulder, and joint pain. As a specialized follow-up treatment to the Thai Solution Massage, it serves continuous health care, sustainable wellness management, and long-term pain prevention through regular therapeutic intervention."
-            },
-            {
-                "heading": "Aromatherapy Massage",
-                "p": "Unwind with our soothing aromatherapy massage, where carefully selected essential oils meet gentle massage techniques. Each oil is chosen for its unique therapeutic properties to address your specific needs—whether you're seeking stress relief, better sleep, or emotional balance."
-            }
-        ],
-        "cta": "Book Your Treatment"
-    }
+    "topper": "Our Treatments",
+    "title": "Proven Therapies for Lasting Relief",
+    "text": "Each massage is personally tailored by Lamai to your specific concerns and tension patterns. From chronic pain to stress relief—experience the difference of individual, therapeutic care.",
+    "items": [
+      {
+        "heading": "Traditional Thai Massage",
+        "p": "Experience our signature oil-free treatment focusing on the entire body as a whole, including muscles, joints, and energy lines. Through rhythmic pressure and stretching techniques, this ancient practice promotes deep relaxation and relieves chronic tension throughout your body."
+      },
+      {
+        "heading": "Prana Thai Back Massage",
+        "p": "Therapeutic pressure techniques target your back muscles to increase oxygen flow and release accumulated toxins from stressed areas. This focused treatment effectively relieves shoulder, neck, and back tension while promoting natural healing and improved circulation."
+      },
+      {
+        "heading": "Marma Aroma Oil Massage",
+        "p": "Gentle massage techniques combine aromatic oils with targeted marma point stimulation to harmonize your body's energy flow. This soothing treatment relieves tension, creates a sense of lightness, and provides ideal stress relief through mindful touch and therapeutic oils."
+      },
+      {
+        "heading": "Aroma Oil Massage",
+        "p": "Immerse yourself in a calming aromatherapy experience where essential oils are absorbed through your skin and inhaled for maximum benefit. This mindfulness-focused treatment promotes deep relaxation, balances emotions, and leaves you feeling centered and refreshed."
+      },
+      {
+        "heading": "Hot Stone Massage",
+        "p": "Warm basalt stones glide across your body with gentle, soothing pressure to melt away deep-seated tension. The healing warmth enhances circulation, promotes natural detoxification, and leaves you with a refreshed, rejuvenated sensation. Perfect for profound stress reduction and comfort."
+      },
+      {
+        "heading": "Herbal Compress Massage",
+        "p": "Steaming herbal compresses infused with aromatic Thai herbs glide softly over your skin, releasing their therapeutic properties. The warmth opens pores, improves circulation, and relieves muscular tension while essential oils and herbs gently calm, revitalize, and restore your body's natural balance."
+      },
+      {
+        "heading": "Foot Reflexology Massage",
+        "p": "Therapeutic massage of reflex zones on your feet that correspond to organs and systems throughout your body. Through targeted pressure and gentle stretching, tensions are released, circulation and lymph flow improve, and your entire organism is harmonized and balanced."
+      },
+      {
+        "heading": "Sport Massage",
+        "p": "Specialized treatment for athletes targeting muscles, tendons, and ligaments through stretching and focused pressure techniques. This massage improves circulation, stimulates muscle metabolism, supports post-workout recovery, enhances performance, and helps prevent injuries. Ideal before or after training sessions."
+      },
+      {
+        "heading": "Couples Massage",
+        "p": "Share a relaxing escape as two experienced therapists work simultaneously on your back, shoulders, neck, and legs. Choose between gentle calming techniques or aromatic oil massage. This harmonious treatment promotes relaxation, reduces stress, and strengthens your shared connection."
+      }
+    ],
+    "cta": "View All Treatments"
+  }
 }

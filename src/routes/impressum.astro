@@ -35,7 +35,7 @@ const optimizedImage = await getOptimizedImage(landingImage)
             <p>
                 <strong>{t("impressum:section2.phone")}</strong> {client.phoneFormatted}<br>
                 <strong>{t("impressum:section2.email")}</strong> <a href={`mailto:${client.email}`}>{client.email}</a><br>
-                <strong>{t("impressum:section2.website")}</strong> <a href="https://anavareethaimassage.de">https://anavareethaimassage.de</a>
+                <strong>{t("impressum:section2.website")}</strong> <a href="{client.domain}">{client.domain}</a>
             </p>
 
             <!-- Section 4: Professional 

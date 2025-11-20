@@ -9,17 +9,12 @@ import {getOptimizedImage} from "@utils/utils"
 import landingImage from "@assets/images/landing.jpg" // <-- THE PATH TO THE ASSET YOU WANT TO PRELOAD - The asset must live in src
 const optimizedImage = await getOptimizedImage(landingImage)
 
-
-
 import { getOptimizedImage } from "@utils/utils";
 
-// Import About section images
-import aboutImage1 from "@assets/images/about1.jpg";
-import galImage1 from "@assets/images/gal1.jpg";
+// Import and Optimize About section images
+import aboutImage from "@assets/images/about.jpg";
+const optimizedAboutImage = await getOptimizedImage(aboutImage);
 
-// Optimize About section images
-const optimizedAboutImage1 = await getOptimizedImage(aboutImage1);
-const optimizedGalImage1 = await getOptimizedImage(galImage1);
 
 ---
 
@@ -37,119 +32,34 @@ const optimizedGalImage1 = await getOptimizedImage(galImage1);
     image={optimizedImage}
   />
 
-  <!-- ============================================ -->
-  <!--                 Side By Side                 -->
-  <!-- ============================================ -->
-
-  <section id="sbs">
-    <div class="cs-container">
-      <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
-          <source
-            media="(max-width: 600px)"
-            srcset={optimizedGalImage1.src}
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset={optimizedGalImage1.src}
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src={optimizedGalImage1.src}
-            alt="gallery"
-            loading="lazy"
-            width={optimizedGalImage1.attributes.width}
-            height={optimizedGalImage1.attributes.height}
-          />
-        </picture>
-        <picture class="cs-picture cs-picture2">
-          <source
-            media="(max-width: 600px)"
-            srcset={optimizedAboutImage1.src}
-          />
-          <source
-            media="(min-width: 601px)"
-            srcset={optimizedAboutImage1.src}
-          />
-          <img
-            aria-hidden="true"
-            decoding="async"
-            src={optimizedAboutImage1.src}
-            alt="about us"
-            loading="lazy"
-            width={optimizedAboutImage1.attributes.width}
-            height={optimizedAboutImage1.attributes.height}
-          />
-        </picture>
-      </div>
-      <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">{t("about-page.topper")}</span>
-        <h2 class="cs-title">{t("about-page.title")}</h2>
-        <p class="cs-text">
-          {t("about-page.p-1")}
-        </p>
-        <p class="cs-text">
-          {t("about-page.p-2")}
-        </p>
-         <p class="cs-text">
-          {t("about-page.p-3")}
-        </p>
-        <div class="cs-flex-group">
-          <p class="cs-flex-p">
-            {t("about-page.p-4")}
-          </p>
-          <span class="cs-name">Pui</span>
-          <span class="cs-job">{t("about-page.rank")}</span>
-          <img
-            class="cs-quote-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-            alt="gavel"
-            width="136"
-            height="77"
-          />
-        </div>
-      </div>
-    </div>
-  </section>
-
 <!-- ============================================ -->
-<!--                    Values                    -->
+<!--                 Side By Side                 -->
 <!-- ============================================ -->
 
-<section id="services-2371">
-    <div class="cs-container">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/travel.svg" alt="icon" width="120" height="120">
-                <h3 class="cs-h3">{t("common:about-page.ourStory.items.0.heading")}</h3>
-                <p class="cs-item-text">
-                    {t("common:about-page.ourStory.items.0.p")}
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/team.svg" alt="icon" width="120" height="120">
-                <h3 class="cs-h3">{t("common:about-page.ourStory.items.1.heading")}</h3>
-                <p class="cs-item-text">
-                    {t("common:about-page.ourStory.items.1.p")}
-                </p>
-            </li>
-            <li class="cs-item">
-                <img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/spa.svg" alt="icon" width="120" height="120">
-                <h3 class="cs-h3">{t("common:about-page.ourStory.items.2.heading")}</h3>
-                <p class="cs-item-text">
-                    {t("common:about-page.ourStory.items.2.p")}
-                </p>
-            </li>
-        </ul>
+<section id="sbs-867">
+  <div class="cs-container">
+    <picture class="cs-picture">
+      <!--Mobile Image-->
+      <source media="(max-width: 600px)" srcset={optimizedAboutImage.src}>
+      <!--Tablet and above Image-->
+      <source media="(min-width: 601px)" srcset={optimizedAboutImage.src}>
+      <img loading="lazy" decoding="async" src={optimizedAboutImage.src} alt="therapy" width={optimizedAboutImage.attributes.width} height={optimizedAboutImage.attributes.height}>
+    </picture>
+    <div class="cs-content">
+      <span class="cs-topper">{t("about-page.topper")}</span>
+      <h2 class="cs-title">{t("about-page.title")}</h2>
+      <p class="cs-text">{t("about-page.p-1")}</p>
+      <p class="cs-text">{t("about-page.p-2")}</p>
+      <p class="cs-text">{t("about-page.p-3")}</p>
+      <div id="quote-827">
+        <span class="cs-quote-text">{t("about-page.p-4")}</span>
+        <span class="cs-name">Lamai</span>
+        <span class="cs-job">{t("about-page.rank")}</span>
+        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="quote" width="136" height="77">
+      </div>
     </div>
+  </div>
 </section>
-                                
-
 
   <CTA />
 </BaseLayout>
@@ -157,200 +67,197 @@ const optimizedGalImage1 = await getOptimizedImage(galImage1);
 <style lang="less">
   /* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
 
-  /*-- -------------------------- -->
+/*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
 
-  /* Mobile - 360px */
-  @media only screen and (min-width: 0em) {
-    #sbs {
-      padding: var(--sectionPadding);
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-867 {
+        padding: var(--sectionPadding);
 
-      .cs-container {
-        width: 100%;
-        max-width: (1280/16rem);
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: (40/16rem);
-      }
-
-      .cs-left {
-        /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
-        /* using ems so we can use font size to scale the whole section */
-        width: (631/16em);
-        height: (636/16em);
-        position: relative;
-      }
-
-      .cs-picture {
-        border-radius: (24/16em);
-        display: block;
-        position: absolute;
-        /* clips img tag corners */
-        overflow: hidden;
-        img {
-          width: 100%;
-          height: 100%;
-          /* makes image act like a background image */
-          object-fit: cover;
-          position: absolute;
-          top: 0;
-          left: 0;
+        .cs-container {
+            width: 100%;
+            /* changes to 1280px at desktop */
+            max-width: (550/16rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 7vw, 4rem);
         }
-      }
 
-      .cs-picture1 {
-        width: (522/16em);
-        height: (581/16em);
-        top: 0;
-        left: 0;
-      }
-
-      .cs-picture2 {
-        width: (414/16em);
-        height: (400/16em);
-        background-color: #fff;
-        right: 0;
-        bottom: 0;
-      }
-
-      .cs-right {
-        max-width: (542/16rem);
-        margin: auto;
-      }
-
-      .cs-topper {
-        text-align: left;
-        margin-bottom: (4/16rem);
-      }
-
-      .cs-title {
-        text-align: left;
-        max-width: (800/16rem);
-      }
-
-      .cs-text {
-        text-align: left;
-        max-width: (750/16rem);
-        margin-bottom: (16/16rem);
-        color: var(--bodyTextColor);
-
-        &:last-of-type {
-          margin-bottom: (32/16rem);
+        .cs-content {
+            /* set text aling to left if content needs to be left aligned */
+            text-align: left;
+            width: 100%;
+            max-width: (542/16rem);
+            /* prevents padding from affecting width and height */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: flex-start;
         }
-      }
 
-      .cs-flex-group {
-        /* 16px - 32px */
-        padding: clamp(1rem, 3vw, 2rem);
-        background-color: var(--sectionColor);
-        border-radius: (16/16rem);
-        position: relative;
-      }
+        .cs-title {
+            /* 17 characters wide including spaces */
+            max-width: 17ch;
+        }
 
-      .cs-flex-p {
+        .cs-text {
+            margin-bottom: (16/16rem);
+            &:last-of-type {
+                margin-bottom: (32/16rem);
+            }
+        }
+
+        .cs-picture {
+            display: block;
+            position: relative;
+            width: 100%;
+            max-width: (630/16rem);
+            /* 400px - 775px */
+            height: clamp(25rem, 70vw, 48.4375rem);
+            /* clips img tag corners */
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 64rem) {
+    #sbs-867 {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            flex-direction: row;
+            max-width: (1280/16rem);
+            justify-content: space-between;
+        }
+
+        .cs-content {
+            width: 53%;
+            /* reset the padding, add the section padding back to the section container */
+            padding: 0;
+        }
+
+        .cs-picture {
+            width: 47vw;
+            position: relative;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #sbs-867 {
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+
+            .cs-title,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-picture {
+                &:before {
+                    background-color: var(--accent);
+                }
+            }
+        }
+    }
+}
+
+/* Mobile - 360px */
+/* you can copy and paste these styles into the section CSS where you placed the #list-827 HTML, or you can place it in your global stylesheet so you can reuse the HTML in any Side By Side section on your site. That way when you make changes to it, it will also change everywhere in the site */
+#quote-827 {
+    width: 100%;
+    max-width: (630/16rem);
+    margin: 0 0 (32/16rem) 0;
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: var(--sectionColor);
+    position: relative;
+
+    .cs-quote-text {
         /* 14px - 16px */
         font-size: clamp(0.875rem, 1.5vw, 1rem);
         line-height: 1.5em;
+        width: 100%;
+        max-width: (500/16rem);
         margin: 0 0 (16/16rem);
-        color: #353535;
-      }
+        color: #767676;
+        display: block;
+    }
 
-      .cs-name {
+    .cs-name {
         font-size: (16/16rem);
-        font-weight: bold;
         line-height: 1.2em;
         text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
         margin: 0 0 (4/16rem);
         color: var(--headerColor);
         display: block;
-      }
+    }
 
-      .cs-job {
+    .cs-job {
         font-size: (14/16rem);
         line-height: 1.5em;
-        color: #353535;
+        color: #767676;
         display: block;
-      }
+    }
 
-      .cs-quote-icon {
+    .cs-quote-icon {
         /* 60px - 136px */
         width: clamp(3.75rem, 10vw, 8.5rem);
         height: auto;
         position: absolute;
+        bottom: 0;
         /* 16px - 32px */
         right: clamp(1rem, 4vw, 2rem);
-        bottom: (0/16rem);
-      }
-
-      .cs-button-solid {
-        margin-top: (32/16rem);
-      }
     }
-  }
+}
 
-  /* Desktop - 1024px */
-  @media only screen and (min-width: 64em) {
-    #sbs {
-      .cs-container {
-        flex-flow: row;
-        justify-content: space-between;
-        gap: (52/16rem);
-      }
+/* Dark Mode, copy and paste only the styles inside the #list-827 brackets into your section's dark mode media query */
+body.dark-mode {
+    #quote-827 {
+        background-color: var(--accent);
 
-      .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
-        flex: none;
-      }
-
-      .cs-right {
-        margin: 0;
-      }
-    }
-  }
-
-  /* Dark Mode */
-  @media only screen and (min-width: 0em) {
-    body.dark-mode {
-      #sbs {
-        .cs-left {
-          &:before,
-          &:after {
-            background: var(--accent);
-          }
-        }
-
-        .cs-picture2 {
-          background-color: var(--dark);
-        }
-
-        .cs-title,
-        .cs-text,
-        .cs-h3,
-        .cs-flex-p,
+        .cs-quote-text,
         .cs-name {
-          color: var(--bodyTextColorWhite);
-        }
-
-        .cs-flex-group {
-          background-color: var(--accent);
+            color: var(--bodyTextColorWhite);
         }
 
         .cs-job {
-          color: var(--bodyTextColorWhite);
-          opacity: 0.8;
+            color: var(--bodyTextColorWhite);
+            opacity: 0.8;
         }
 
         .cs-quote-icon {
-          opacity: 0.2;
+            opacity: 0.2;
         }
-      }
     }
-  }
+}
+
+                                
 
 /*-- -------------------------- -->
 <---         Services           -->
