@@ -80,7 +80,7 @@ import { t, getLocalePath } from "i18n:astro";
                 {t("home:hero.topper")}
             </span>
             <h1 class="cs-title">{t("home:hero.title")}</h1>
-            <a href={getLocalePath("/contact")} class="cs-button-solid">{t("home:hero.cta1")}</a>
+            <a href={client.bookingLink} target="_blank" rel="noopener" class="cs-button-solid">{t("home:hero.cta1")}</a>
             <!--Bottom Corners-->
             <div class="cs-corners" aria-hidden="true"></div>
         </div>
