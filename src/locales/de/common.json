@@ -53,9 +53,17 @@
         "information": "Informationen",
         "services": "Behandlungen",
         "contact": "Kontakt",
+        "privacyPolicy": "Datenschutzerklärung",
         "click": "Klicken zum E-Mail senden",
         "p": "Zusätzlicher Inhalt falls benötigt, ansonsten können Sie diesen ganzen p-Tag löschen. Mache ich normalerweise auch.",
         "credit": "Entworfen und Hand-Codiert von "
+    },
+    "cookiePopup": {
+        "title": "Diese Website verwendet Cookies",
+        "text": "Diese Website verwendet Cookies. Durch die Nutzung unserer Website stimmen Sie allen Cookies gemäß unserer Cookie-Richtlinie zu.",
+        "readMore": "Mehr erfahren",
+        "policyLink": "/privacy-policy",
+        "accept": "Akzeptieren"
     },
     "notFound": {
         "pageNotFound": "404 - Die gesuchte Seite existiert nicht.",

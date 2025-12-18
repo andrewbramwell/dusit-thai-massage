@@ -53,9 +53,17 @@
         "information": "Information",
         "services": "Services",
         "contact": "Contact",
+        "privacyPolicy": "Privacy Policy",
         "click": "Click to email",
         "p": "Extra content if you need it, if not you can delete this whole p tag. I usually do.",
         "credit": "Designed and Hand Coded by "
+    },
+    "cookiePopup": {
+        "title": "This website uses cookies",
+        "text": "This website uses cookies. By using our website you consent to all cookies in accordance with our Cookie Policy.",
+        "readMore": "Read More",
+        "policyLink": "/privacy-policy",
+        "accept": "Accept"
     },
     "notFound": {
         "pageNotFound": "404 - The page you're looking for does not exist.",

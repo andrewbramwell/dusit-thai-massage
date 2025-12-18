@@ -1,0 +1,58 @@
+{
+  "landing": {
+    "title": "Datenschutzerklärung",
+    "description": "Lesen Sie unsere Datenschutzerklärung, um zu verstehen, wie wir Ihre persönlichen Daten erfassen, verwenden und schützen."
+  },
+  "content": {
+    "h1": "Datenschutzerklärung für",
+    "lastUpdated": "Letzte Aktualisierung: Dezember 2025",
+    "intro": {
+      "heading": "Einleitung",
+      "text": "Wir verpflichten uns, Ihre Privatsphäre zu schützen und die Sicherheit Ihrer persönlichen Daten zu gewährleisten. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erfassen, verwenden und schützen, wenn Sie unsere Dienstleistungen nutzen oder unsere Website besuchen."
+    },
+    "infoCollect": {
+      "heading": "Welche Informationen wir erfassen",
+      "text": "Wir können folgende Arten von Informationen erfassen:",
+      "item1": "Persönliche Identifikationsdaten (Name, E-Mail-Adresse, Telefonnummer)",
+      "item2": "Termin- und Buchungsdetails",
+      "item3": "Gesundheitsinformationen, die für die Erbringung von Massagedienstleistungen relevant sind",
+      "item4": "Zahlungsinformationen zur Abwicklung von Transaktionen"
+    },
+    "howWeUse": {
+      "heading": "Wie wir Ihre Informationen verwenden",
+      "text": "Wir verwenden die erfassten Informationen für folgende Zwecke:",
+      "item1": "Zur Bereitstellung und Aufrechterhaltung unserer Massagetherapie-Dienstleistungen",
+      "item2": "Zur Bearbeitung von Terminen und Verwaltung von Buchungen",
+      "item3": "Zur Kommunikation mit Ihnen über Ihre Termine und unsere Dienstleistungen",
+      "item4": "Zur Verbesserung unserer Dienstleistungen und Kundenerfahrung"
+    },
+    "cookies": {
+      "heading": "Cookies und Tracking",
+      "text": "Unsere Website verwendet Cookies, um Ihr Browsing-Erlebnis zu verbessern. Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden und uns helfen, Ihre Präferenzen zu speichern und die Funktionalität der Website zu verbessern. Sie können die Cookie-Einstellungen über Ihre Browser-Einstellungen steuern."
+    },
+    "dataProtection": {
+      "heading": "Datenschutz und Sicherheit",
+      "text": "Wir setzen angemessene technische und organisatorische Maßnahmen um, um Ihre persönlichen Daten vor unbefugtem Zugriff, Änderung, Offenlegung oder Zerstörung zu schützen. Ihre Informationen werden sicher gespeichert und nur von autorisiertem Personal abgerufen, das sie zur Erbringung unserer Dienstleistungen benötigt."
+    },
+    "thirdParty": {
+      "heading": "Drittanbieter-Dienste",
+      "text": "Wir können Drittanbieter-Dienstleister nutzen, um unsere Services zu erleichtern, wie z.B. Zahlungsabwickler und Buchungssysteme. Diese Anbieter haben nur Zugriff auf Ihre persönlichen Daten, um bestimmte Aufgaben in unserem Auftrag auszuführen, und sind verpflichtet, Ihre Daten zu schützen."
+    },
+    "yourRights": {
+      "heading": "Ihre Rechte",
+      "text": "Gemäß Datenschutzgesetz haben Sie das Recht:",
+      "item1": "Auf Zugang zu den persönlichen Daten, die wir über Sie speichern",
+      "item2": "Auf Berichtigung unrichtiger oder unvollständiger Informationen",
+      "item3": "Auf Löschung Ihrer persönlichen Daten",
+      "item4": "Auf Widerspruch gegen oder Einschränkung der Verarbeitung Ihrer Daten"
+    },
+    "contact": {
+      "heading": "Kontaktieren Sie uns",
+      "text": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder zur Handhabung Ihrer persönlichen Daten haben, kontaktieren Sie uns bitte:"
+    },
+    "changes": {
+      "heading": "Änderungen dieser Richtlinie",
+      "text": "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren, um Änderungen in unseren Praktiken oder gesetzlichen Anforderungen widerzuspiegeln. Wir werden Sie über wesentliche Änderungen informieren, indem wir die neue Richtlinie auf unserer Website mit einem aktualisierten Revisionsdatum veröffentlichen."
+    }
+  }
+}
